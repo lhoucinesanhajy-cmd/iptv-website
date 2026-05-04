@@ -1,0 +1,62 @@
+﻿    <section id="pricing">
+        <div class="pricing-label" id="pricing-tag">💳 Pricing</div>
+        <h2 class="pricing-heading">Simple, Transparent<br><span class="pricing-h2-accent">Pricing</span></h2>
+        <p class="pricing-subtitle">No contracts. No hidden fees. Cancel anytime.</p>
+
+        <div class="pricing-grid">
+
+            <!-- Card 1: 3 Months -->
+            <div class="pricing-card" id="plan-3m">
+                <div class="plan-duration">3 Months</div>
+                <div class="price">&euro;29 <span>/ 3 months</span></div>
+                <p class="plan-desc">Perfect to test the service</p>
+                <ul class="plan-features">
+                    <li><span class="check">&#10003;</span> 15,000+ Live Channels</li>
+                    <li><span class="check">&#10003;</span> Full HD Quality</li>
+                    <li><span class="check">&#10003;</span> 1 Device Connection</li>
+                    <li><span class="check">&#10003;</span> VOD Library Access</li>
+                    <li><span class="check">&#10003;</span> 24/7 Support</li>
+                </ul>
+                <!-- ORDER NOW — opens WhatsApp directly -->
+                <a href="https://wa.me/447347586107" class="plan-btn" id="btn-3m" target="_blank" rel="noopener">Order Now</a>
+            </div>
+
+            <!-- Card 2: 6 Months — Most Popular -->
+            <div class="pricing-card popular" id="plan-6m">
+                <span class="badge" id="popular-badge">&#10022; Most Popular</span>
+                <div class="popular-glow"></div>
+                <div class="plan-duration">6 Months</div>
+                <div class="price">&euro;39 <span>/ 6 months</span></div>
+                <p class="plan-desc">Best balance of price &amp; time</p>
+                <ul class="plan-features">
+                    <li><span class="check">&#10003;</span> 15,000+ Live Channels</li>
+                    <li><span class="check">&#10003;</span> 4K UHD Quality</li>
+                    <li><span class="check">&#10003;</span> 2 Device Connections</li>
+                    <li><span class="check">&#10003;</span> VOD + Full Series Library</li>
+                    <li><span class="check">&#10003;</span> 24/7 Priority Support</li>
+                </ul>
+                <!-- ORDER NOW — opens WhatsApp directly -->
+                <a href="https://wa.me/447347586107" class="plan-btn" id="btn-6m" target="_blank" rel="noopener">Order Now</a>
+            </div>
+
+            <!-- Card 3: 12 Months -->
+            <div class="pricing-card" id="plan-12m">
+                <div class="plan-duration">12 Months</div>
+                <div class="price">&euro;59 <span>/ year</span></div>
+                <p class="plan-desc">Maximum savings</p>
+                <ul class="plan-features">
+                    <li><span class="check">&#10003;</span> 15,000+ Live Channels</li>
+                    <li><span class="check">&#10003;</span> 4K UHD Quality</li>
+                    <li><span class="check">&#10003;</span> 3 Device Connections</li>
+                    <li><span class="check">&#10003;</span> Full VOD + Catch-Up TV</li>
+                    <li><span class="check">&#10003;</span> 24/7 VIP Support</li>
+                </ul>
+                <!-- ORDER NOW — opens WhatsApp directly -->
+                <a href="https://wa.me/447347586107" class="plan-btn" id="btn-12m" target="_blank" rel="noopener">Order Now</a>
+            </div>
+
+        </div>
+
+        <p class="pricing-note">All plans include instant activation &bull; 24-hour free trial available on request</p>
+    </section>
+

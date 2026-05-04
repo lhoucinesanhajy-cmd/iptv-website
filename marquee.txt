@@ -1,0 +1,87 @@
+<!-- START: PREMIUM INFINITE LOGO MARQUEE -->
+<section class="premium-marquee-section">
+    <div class="marquee-overlay-left"></div>
+    <div class="marquee-overlay-right"></div>
+    
+    <div class="marquee-container">
+        <div class="marquee-track">
+            <!-- SET 1 -->
+            <!-- Use --glow-color to dynamically match the brand's primary vivid color -->
+            <div class="marquee-item" style="--glow-color: #E50914;">
+                <img src="./images/netflix.png" alt="Netflix">
+            </div>
+            <div class="marquee-item" style="--glow-color: #113CCF;">
+                <img src="./images/disney.png" alt="Disney+">
+            </div>
+            <div class="marquee-item" style="--glow-color: #8C00FF;">
+                <img src="./images/bein.png" alt="beIN Sports">
+            </div>
+            <div class="marquee-item" style="--glow-color: #EE122C;">
+                <img src="./images/laliga.png" alt="La Liga">
+            </div>
+            <div class="marquee-item" style="--glow-color: #00FF87;">
+                <img src="./images/premier.png" alt="Premier League">
+            </div>
+            <div class="marquee-item" style="--glow-color: #00A8E1;">
+                <img src="./images/amazon.png" alt="Prime Video">
+            </div>
+            <div class="marquee-item" style="--glow-color: #5822B4;">
+                <img src="./images/hbo.png" alt="HBO Max">
+            </div>
+            <div class="marquee-item" style="--glow-color: #FFFFFF;">
+                <img src="./images/apple.png" alt="Apple TV+">
+            </div>
+            <div class="marquee-item" style="--glow-color: #F7B000;">
+                <img src="./images/discovery.png" alt="Discovery">
+            </div>
+            <div class="marquee-item" style="--glow-color: #FF00E6;">
+                <img src="./images/cartoon.png" alt="Cartoon Network">
+            </div>
+            <div class="marquee-item" style="--glow-color: #F8F8F9;">
+                <img src="./images/dazn.png" alt="DAZN">
+            </div>
+            <div class="marquee-item" style="--glow-color: #0000A0;">
+                <img src="./images/sky.png" alt="Sky Sports">
+            </div>
+
+            <!-- SET 2 (Exact Duplicate for Seamless Loop) -->
+            <div class="marquee-item" style="--glow-color: #E50914;">
+                <img src="./images/netflix.png" alt="Netflix">
+            </div>
+            <div class="marquee-item" style="--glow-color: #113CCF;">
+                <img src="./images/disney.png" alt="Disney+">
+            </div>
+            <div class="marquee-item" style="--glow-color: #8C00FF;">
+                <img src="./images/bein.png" alt="beIN Sports">
+            </div>
+            <div class="marquee-item" style="--glow-color: #EE122C;">
+                <img src="./images/laliga.png" alt="La Liga">
+            </div>
+            <div class="marquee-item" style="--glow-color: #00FF87;">
+                <img src="./images/premier.png" alt="Premier League">
+            </div>
+            <div class="marquee-item" style="--glow-color: #00A8E1;">
+                <img src="./images/amazon.png" alt="Prime Video">
+            </div>
+            <div class="marquee-item" style="--glow-color: #5822B4;">
+                <img src="./images/hbo.png" alt="HBO Max">
+            </div>
+            <div class="marquee-item" style="--glow-color: #FFFFFF;">
+                <img src="./images/apple.png" alt="Apple TV+">
+            </div>
+            <div class="marquee-item" style="--glow-color: #F7B000;">
+                <img src="./images/discovery.png" alt="Discovery">
+            </div>
+            <div class="marquee-item" style="--glow-color: #FF00E6;">
+                <img src="./images/cartoon.png" alt="Cartoon Network">
+            </div>
+            <div class="marquee-item" style="--glow-color: #F8F8F9;">
+                <img src="./images/dazn.png" alt="DAZN">
+            </div>
+            <div class="marquee-item" style="--glow-color: #0000A0;">
+                <img src="./images/sky.png" alt="Sky Sports">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END: PREMIUM INFINITE LOGO MARQUEE -->

@@ -1,0 +1,131 @@
+/* =====================================================================
+   PREMIUM INFINITE LOGO MARQUEE STYLES
+   ===================================================================== */
+
+.premium-marquee-section {
+    position: relative;
+    background-color: #0f051c; /* Deep dark base background */
+    padding: 60px 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* Smooth fade on left and right edges for a premium seamless appearance */
+.marquee-overlay-left,
+.marquee-overlay-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.marquee-overlay-left {
+    left: 0;
+    background: linear-gradient(to right, #0f051c 0%, transparent 100%);
+}
+
+.marquee-overlay-right {
+    right: 0;
+    background: linear-gradient(to left, #0f051c 0%, transparent 100%);
+}
+
+.marquee-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.marquee-track {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Consistent spacing between all logos */
+    padding: 0 20px;
+    width: max-content;
+    /* Fast, smooth, infinite loop (adjust time for speed) */
+    animation: premium-scroll 25s linear infinite;
+    will-change: transform;
+}
+
+/* Pause animation on hover */
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes premium-scroll {
+    0% { transform: translateX(0); }
+    /* Moves exactly 50% of the track (which is 1 full set of logos) to loop seamlessly */
+    100% { transform: translateX(-50%); }
+}
+
+/* --- Individual Logo Containers with Glassmorphism --- */
+.marquee-item {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: transparent;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* Perfect Consistency & Alignment: Uniform sizing for all logos */
+.marquee-item img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain; /* Prevents stretching, maintains aspect ratio */
+    transition: all 0.4s ease;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4)); /* Slight shadow for depth */
+}
+
+/* --- Premium Look & Glow Hover State --- */
+.marquee-item:hover {
+    /* Frosted-glass effect (glassmorphism) */
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    
+    /* Gentle colored glow that matches the logo's dominant color */
+    box-shadow: 0 10px 30px -10px var(--glow-color), 
+                inset 0 0 15px -5px var(--glow-color);
+                
+    /* Lift effect */
+    transform: translateY(-8px);
+    z-index: 10;
+}
+
+/* Make the logo pop and scale up gently on hover */
+.marquee-item:hover img {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 15px var(--glow-color));
+}
+
+/* Make un-hovered items recede slightly when interacting with the track */
+.marquee-track:hover .marquee-item:not(:hover) {
+    opacity: 0.4;
+    transform: scale(0.95);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .marquee-item {
+        width: 90px;
+        height: 90px;
+    }
+    .marquee-item img {
+        width: 50px;
+        height: 50px;
+    }
+    .marquee-track {
+        gap: 20px;
+    }
+}
