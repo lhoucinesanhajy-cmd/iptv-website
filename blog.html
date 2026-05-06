@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog — MyIPTV Premium Service</title>
-    <meta name="description" content="IPTV tips, guides, and news from the MyIPTV team. Learn how to get the most out of your subscription.">
+    <title>Blog — OttOcean IPTV</title>
+    <meta name="description" content="IPTV tips, guides, and news from the OttOcean IPTV team. Learn how to get the most out of your subscription.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
@@ -41,21 +41,32 @@
 
         .blog-card-thumb {
             width: 100%;
-            aspect-ratio: 16/9;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
+            height: 200px;
             position: relative;
             overflow: hidden;
+            background: #0d0d1a;
         }
 
-        .blog-card-thumb.thumb-purple { background: linear-gradient(135deg, rgba(168,85,247,0.25), rgba(99,102,241,0.2)); }
-        .blog-card-thumb.thumb-blue   { background: linear-gradient(135deg, rgba(56,189,248,0.2), rgba(99,102,241,0.18)); }
-        .blog-card-thumb.thumb-green  { background: linear-gradient(135deg, rgba(34,197,94,0.18), rgba(56,189,248,0.15)); }
-        .blog-card-thumb.thumb-pink   { background: linear-gradient(135deg, rgba(236,72,153,0.2), rgba(168,85,247,0.18)); }
-        .blog-card-thumb.thumb-amber  { background: linear-gradient(135deg, rgba(245,158,11,0.2), rgba(239,68,68,0.15)); }
-        .blog-card-thumb.thumb-indigo { background: linear-gradient(135deg, rgba(99,102,241,0.22), rgba(168,85,247,0.18)); }
+        .blog-card-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+            filter: brightness(0.78) saturate(1.15);
+        }
+
+        .blog-card:hover .blog-card-thumb img {
+            transform: scale(1.06);
+        }
+
+        .blog-card-thumb::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, transparent 40%, rgba(5,5,20,0.72) 100%);
+            pointer-events: none;
+        }
 
         .blog-card-body { padding: 22px 22px 24px; }
 
@@ -137,7 +148,7 @@
 
     <header id="site-header">
         <nav class="nav-container">
-            <a href="index.html" class="logo" id="nav-logo">MyIPTV</a>
+            <a href="index.html" class="logo" id="nav-logo">OttOcean IPTV</a>
             <ul class="nav-links" id="nav-links">
                 <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
                 <li><a href="pricing.html" class="nav-link" id="nav-pricing">Pricing</a></li>
@@ -160,7 +171,7 @@
     <section class="page-hero">
         <div class="page-hero-inner">
             <span class="page-hero-tag">📝 Tips & Guides</span>
-            <h1>The MyIPTV<br><span>Blog</span></h1>
+            <h1>The OttOcean IPTV<br><span>Blog</span></h1>
             <p>Setup guides, streaming tips, and the latest news to help you get the most out of your IPTV subscription.</p>
         </div>
     </section>
@@ -170,7 +181,9 @@
 
         <article class="blog-card" id="blog-post-1">
             <a href="blog-post-1.html" style="text-decoration:none;">
-                <div class="blog-card-thumb thumb-purple">🛡️</div>
+                <div class="blog-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80&auto=format&fit=crop" alt="Glowing router representing home network security" loading="lazy">
+                </div>
                 <div class="blog-card-body">
                     <span class="blog-tag blog-tag--guide">Security</span>
                     <h2 class="blog-card-title">How to Secure Your Home Network for High-Speed Streaming</h2>
@@ -185,7 +198,9 @@
 
         <article class="blog-card" id="blog-post-2">
             <a href="blog-post-2.html" style="text-decoration:none;">
-                <div class="blog-card-thumb thumb-blue">⚡</div>
+                <div class="blog-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=700&q=80&auto=format&fit=crop" alt="High-speed data light trails representing ISP throttling" loading="lazy">
+                </div>
                 <div class="blog-card-body">
                     <span class="blog-tag blog-tag--tips">Optimization</span>
                     <h2 class="blog-card-title">The Ultimate Guide to Eliminating ISP Throttling</h2>
@@ -200,7 +215,9 @@
 
         <article class="blog-card" id="blog-post-3">
             <a href="blog-post-3.html" style="text-decoration:none;">
-                <div class="blog-card-thumb thumb-green">🌐</div>
+                <div class="blog-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?w=700&q=80&auto=format&fit=crop" alt="4K futuristic streaming visual for smooth connection" loading="lazy">
+                </div>
                 <div class="blog-card-body">
                     <span class="blog-tag blog-tag--news">Trends 2026</span>
                     <h2 class="blog-card-title">The 2026 Guide to Solving ISP Throttling</h2>
@@ -215,7 +232,9 @@
 
         <article class="blog-card" id="blog-post-4">
             <a href="blog-post-4.html" style="text-decoration:none;">
-                <div class="blog-card-thumb thumb-pink">📱</div>
+                <div class="blog-card-thumb">
+                    <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=700&q=80&auto=format&fit=crop" alt="Smart TV and streaming app interface" loading="lazy">
+                </div>
                 <div class="blog-card-body">
                     <span class="blog-tag blog-tag--guide">Software</span>
                     <h2 class="blog-card-title">Hardware vs. Software: Why your App is Key</h2>
@@ -229,7 +248,9 @@
         </article>
 
         <article class="blog-card" id="blog-post-5">
-            <div class="blog-card-thumb thumb-amber">🎬</div>
+            <div class="blog-card-thumb">
+                <img src="https://images.unsplash.com/photo-1616628188502-413f2fe46e5e?w=700&q=80&auto=format&fit=crop" alt="IPTV app interfaces on a TV screen" loading="lazy">
+            </div>
             <div class="blog-card-body">
                 <span class="blog-tag blog-tag--review">Review</span>
                 <h2 class="blog-card-title">TiviMate vs IPTV Smarters: Which Is Better?</h2>
@@ -242,7 +263,9 @@
         </article>
 
         <article class="blog-card" id="blog-post-6">
-            <div class="blog-card-thumb thumb-indigo">🛡️</div>
+            <div class="blog-card-thumb">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=700&q=80&auto=format&fit=crop" alt="VPN secure tunnel world map encrypted connections" loading="lazy">
+            </div>
             <div class="blog-card-body">
                 <span class="blog-tag blog-tag--tips">Tips</span>
                 <h2 class="blog-card-title">Do I Need a VPN for IPTV? The Honest Answer</h2>
@@ -254,6 +277,22 @@
             </div>
         </article>
 
+<article class="blog-card" id="blog-post-7">
+    <a href="firestick-guide.html" style="text-decoration:none;">
+        <div class="blog-card-thumb">
+            <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=700&q=80&auto=format&fit=crop" alt="Amazon Firestick connected to TV for IPTV streaming" loading="lazy">
+        </div>
+        <div class="blog-card-body">
+            <span class="blog-tag blog-tag--guide">Guide</span>
+            <h2 class="blog-card-title">How to Install IPTV on Amazon Firestick (2026 Ultimate Guide)</h2>
+            <p class="blog-card-excerpt">Step‑by‑step guide to set up IPTV on your Firestick, enable unknown sources, use Downloader, and avoid buffering.</p>
+            <div class="blog-card-meta">
+                <span class="blog-card-date"><i class="fa-regular fa-calendar"></i> May 15, 2026</span>
+                <span class="blog-card-read"><i class="fa-regular fa-clock"></i> 6 min read</span>
+            </div>
+        </div>
+    </a>
+</article>
     </div>
 
     <!-- CTA to try the service -->
@@ -283,7 +322,7 @@
     <footer id="site-footer">
         <div class="footer-inner">
             <div class="footer-brand">
-                <a href="index.html" class="footer-logo">MyIPTV</a>
+                <a href="index.html" class="footer-logo">OttOcean IPTV</a>
                 <p class="footer-tagline">Premium IPTV streaming — 15,000+ channels, 4K quality, 99.9% uptime. Anywhere. Any device.</p>
             </div>
             <div class="footer-col">
@@ -299,9 +338,9 @@
             <div class="footer-col">
                 <h4 class="footer-col-title">Our Plans</h4>
                 <ul class="footer-links">
-                    <li><a href="pricing.html" class="footer-link">3 Months — €29</a></li>
-                    <li><a href="pricing.html" class="footer-link">6 Months — €39</a></li>
-                    <li><a href="pricing.html" class="footer-link">12 Months — €59</a></li>
+                    <li><a href="pricing.html" class="footer-link">3 Months — €39</a></li>
+                    <li><a href="pricing.html" class="footer-link">6 Months — €49</a></li>
+                    <li><a href="pricing.html" class="footer-link">12 Months — €65</a></li>
                     <li><a href="https://wa.me/447347586107" class="footer-link" target="_blank" rel="noopener">Free 24h Trial</a></li>
                 </ul>
             </div>
@@ -310,7 +349,7 @@
                 <ul class="footer-links footer-contact-list">
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        <a href="mailto:support@myiptv.com" class="footer-link">support@myiptv.com</a>
+                        <a href="mailto:support@ottocean.com" class="footer-link">support@ottocean.com</a>
                     </li>
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -320,7 +359,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p class="footer-copy">© <span id="footer-year"></span> MyIPTV. All rights reserved.</p>
+            <p class="footer-copy">© <span id="footer-year"></span> OttOcean IPTV. All rights reserved.</p>
             <div class="footer-bottom-links">
                 <a href="#" class="footer-bottom-link">Privacy Policy</a>
                 <a href="#" class="footer-bottom-link">Terms of Service</a>
