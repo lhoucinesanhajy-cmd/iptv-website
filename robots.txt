@@ -1,1 +1,3 @@
-Sitemap: https://ottoceaniptv.online/sitemap.xml
+Sitemap: https://www.ottocean.sbs/sitemap.xml
+User-agent: *
+Allow: /

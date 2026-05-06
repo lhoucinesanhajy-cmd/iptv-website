@@ -1,4 +1,4 @@
-"""
+﻿"""
 Apply Google Search Console verification + SEO/security fixes across all HTML files.
 Changes per file:
   1. Insert <meta name="google-site-verification" ...> right after <meta charset="UTF-8">
@@ -17,16 +17,16 @@ VERIFICATION = '<meta name="google-site-verification" content="4KImfz50NaUfqPQNm
 
 # Canonical URLs per file
 CANONICALS = {
-    "index.html":          "https://www.ottoceaniptv.online/",
-    "blog.html":           "https://www.ottoceaniptv.online/blog.html",
-    "contact.html":        "https://www.ottoceaniptv.online/contact.html",
-    "faq.html":            "https://www.ottoceaniptv.online/faq.html",
-    "pricing.html":        "https://www.ottoceaniptv.online/pricing.html",
-    "blog-post-1.html":    "https://www.ottoceaniptv.online/blog-post-1.html",
-    "blog-post-2.html":    "https://www.ottoceaniptv.online/blog-post-2.html",
-    "blog-post-3.html":    "https://www.ottoceaniptv.online/blog-post-3.html",
-    "blog-post-4.html":    "https://www.ottoceaniptv.online/blog-post-4.html",
-    "firestick-guide.html":"https://www.ottoceaniptv.online/firestick-guide.html",
+    "index.html":          "https://www.ottocean.sbs/",
+    "blog.html":           "https://www.ottocean.sbs/blog.html",
+    "contact.html":        "https://www.ottocean.sbs/contact.html",
+    "faq.html":            "https://www.ottocean.sbs/faq.html",
+    "pricing.html":        "https://www.ottocean.sbs/pricing.html",
+    "blog-post-1.html":    "https://www.ottocean.sbs/blog-post-1.html",
+    "blog-post-2.html":    "https://www.ottocean.sbs/blog-post-2.html",
+    "blog-post-3.html":    "https://www.ottocean.sbs/blog-post-3.html",
+    "blog-post-4.html":    "https://www.ottocean.sbs/blog-post-4.html",
+    "firestick-guide.html":"https://www.ottocean.sbs/firestick-guide.html",
 }
 
 # index.html specific overrides

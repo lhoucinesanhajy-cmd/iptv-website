@@ -1,4 +1,4 @@
-import os
+﻿import os
 import re
 import json
 
@@ -73,7 +73,7 @@ def update_blog_schema(filepath):
     img_match = re.search(r'<img src="([^"]+)"[^>]*class="article-hero-img"', content)
     if not img_match:
         img_match = re.search(r'<img[^>]*src="([^"]+)"', content)
-    img_url = img_match.group(1) if img_match else "https://ottoceaniptv.online/favicon.png"
+    img_url = img_match.group(1) if img_match else "https://ottocean.sbs/favicon.png"
 
     blog_schema = {
         "@context": "https://schema.org",
