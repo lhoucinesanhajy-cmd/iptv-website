@@ -3335,37 +3335,20 @@ header.scrolled {
     animation: pulseGlow 2s infinite ease-in-out;
 }
 
-/* Floating WhatsApp Widget */
-.floating-wa {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
-    background-color: #25d366; /* WhatsApp green */
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 9999;
-    transition: all 0.3s ease;
-    text-decoration: none;
-}
-
-.floating-wa:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
-    color: white;
-}
+/* Floating WhatsApp Widget - legacy block kept for specificity override */
+/* The definitive styles are in the FLOATING WHATSAPP WIDGET block below */
 
 /* ===== COMPARISON SECTION ===== */
 #comparison {
-    padding: 100px 40px;
+    padding: 100px 20px;
     background: #0f051c;
     position: relative;
+}
+
+@media (min-width: 769px) {
+    #comparison {
+        padding: 100px 40px;
+    }
 }
 
 #comparison::before {
@@ -3410,10 +3393,11 @@ header.scrolled {
 
 .comp-cell {
     flex: 1;
-    padding: 24px 32px;
+    padding: 20px 24px;
     display: flex;
     align-items: center;
-    font-size: 0.95rem;
+    gap: 10px;
+    font-size: 0.92rem;
     color: rgba(224, 216, 240, 0.8);
 }
 
@@ -3428,20 +3412,35 @@ header.scrolled {
     background: rgba(168, 85, 247, 0.05);
     color: #ffffff;
     font-weight: 700;
-    gap: 12px;
+    gap: 10px;
     border-left: 1px solid rgba(168, 85, 247, 0.1);
     border-right: 1px solid rgba(168, 85, 247, 0.1);
 }
 
-.comp-cell.highlighted i {
-    color: #a855f7;
+.comp-cell.highlighted i.fa-check-circle {
+    color: #22c55e !important;
     font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.comp-cell i.fa-times-circle {
+    color: #ef4444 !important;
+    font-size: 1.05rem;
+    flex-shrink: 0;
+    opacity: 1;
 }
 
 .comp-cell i.fa-circle-xmark {
     color: #f87171;
-    margin-right: 12px;
-    opacity: 0.7;
+    margin-right: 4px;
+    opacity: 0.9;
+}
+
+/* Ensure red competitor text is readable on dark background */
+.comp-cell span[style*="color:#ef4444"],
+.comp-cell span[style*="color: #ef4444"] {
+    color: #fc8181 !important;
+    font-weight: 600;
 }
 
 .comp-header {
@@ -3455,7 +3454,7 @@ header.scrolled {
     letter-spacing: 1.5px;
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.5);
-    padding: 20px 32px;
+    padding: 20px 24px;
 }
 
 .comp-header .comp-cell.highlighted {
@@ -3465,19 +3464,82 @@ header.scrolled {
     font-size: 0.95rem;
 }
 
+/* ===== MOBILE-FIRST COMPARISON TABLE ===== */
 @media (max-width: 768px) {
     .comp-row {
         flex-direction: column;
+        margin-bottom: 16px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        overflow: hidden;
     }
-    .comp-cell {
-        padding: 12px 20px;
+    .comp-row:last-child {
+        margin-bottom: 0;
     }
+    /* Hide the border-bottom on cells (row border handles it) */
+    .comp-row .comp-cell {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 14px 18px;
+        font-size: 0.88rem;
+    }
+    .comp-row .comp-cell:last-child {
+        border-bottom: none;
+    }
+    /* Feature label gets a purple tint so users know which row they're reading */
     .comp-cell:first-child {
-        background: rgba(168, 85, 247, 0.1);
-        color: #a855f7;
+        background: rgba(168, 85, 247, 0.12);
+        color: #c084fc;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        font-weight: 700;
+        padding: 10px 18px;
     }
+    /* Hide desktop-only header row on mobile */
     .comp-header {
         display: none;
+    }
+    /* Add column labels via data attributes before each cell */
+    .comp-cell.highlighted::before {
+        content: '✓ OttOcean IPTV';
+        display: block;
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #22c55e;
+        margin-bottom: 4px;
+        -webkit-text-fill-color: #22c55e;
+        background: none;
+    }
+    .comp-cell:last-child:not(.highlighted):not(:first-child)::before {
+        content: '✕ Other Providers';
+        display: block;
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #fc8181;
+        margin-bottom: 4px;
+    }
+    .comp-cell.highlighted {
+        flex-direction: column;
+        align-items: flex-start;
+        border-left: none;
+        border-right: none;
+        gap: 4px;
+    }
+    .comp-cell:last-child:not(:first-child) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    .comparison-table {
+        border-radius: 0;
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        backdrop-filter: none;
     }
 }
 
@@ -4259,8 +4321,8 @@ header.scrolled {
     bottom: 28px;
     right: 28px;
     z-index: 9999;
-    width: 56px;
-    height: 56px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background: linear-gradient(135deg, #25d366, #128c7e);
     display: flex;
@@ -4270,6 +4332,7 @@ header.scrolled {
     animation: wa-pulse-ring 2.5s ease-in-out infinite;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     text-decoration: none;
+    line-height: 1;
 }
 
 .floating-wa:hover {
@@ -4277,13 +4340,86 @@ header.scrolled {
     box-shadow: 0 8px 32px rgba(37, 211, 102, 0.65);
 }
 
-.floating-wa i {
-    font-size: 1.6rem;
-    color: #ffffff;
+/* Force icon to be visible - critical fix */
+.floating-wa i,
+.floating-wa i.fa-whatsapp,
+.floating-wa .fa-brands.fa-whatsapp {
+    font-size: 1.8rem !important;
+    color: #ffffff !important;
+    display: inline-block !important;
+    line-height: 1;
+    font-family: 'Font Awesome 6 Brands', 'FontAwesome' !important;
+    font-weight: 400 !important;
 }
 
 @keyframes wa-pulse-ring {
     0%   { box-shadow: 0 4px 20px rgba(37,211,102,0.45), 0 0 0 0 rgba(37,211,102,0.45); }
     70%  { box-shadow: 0 4px 20px rgba(37,211,102,0.45), 0 0 0 14px rgba(37,211,102,0); }
     100% { box-shadow: 0 4px 20px rgba(37,211,102,0.45), 0 0 0 0 rgba(37,211,102,0); }
+}
+
+/* ===== GLOBAL MOBILE SPACING FIXES ===== */
+@media (max-width: 768px) {
+    /* Prevent any card/section from touching screen edges */
+    #categories,
+    #features,
+    #pricing,
+    #comparison,
+    #setup,
+    #faq,
+    #contact,
+    #content-showcase,
+    #testimonials {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    /* Features section: center text and fix padding on mobile */
+    #features {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        text-align: center;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .feature-card {
+        padding: 28px 20px 24px;
+        text-align: left;
+    }
+
+    /* Comparison section */
+    #comparison {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    /* Contact section */
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    /* Category cards */
+    #categories {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    /* FAQ section */
+    #faq {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    /* Floating WA on very small screens */
+    .floating-wa {
+        bottom: 20px;
+        right: 16px;
+        width: 52px;
+        height: 52px;
+    }
 }

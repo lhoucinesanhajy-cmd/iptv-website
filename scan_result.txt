@@ -1,0 +1,58 @@
+﻿Files with U+FFFD replacement chars:
+  FILE: blog-post-1.html
+  pos 10287: [...compromised, your main network´┐¢where you handle banking and ...]
+  pos 10346: [... stream high-bandwidth content´┐¢remains entirely protected.</...]
+  pos 13050: [...gline">Premium IPTV streaming ´┐¢ 15,000+ channels, 4K quality...]
+  pos 13932: [... class="footer-link">3 Months ´┐¢ ´┐¢39</a></li>                ...]
+  pos 13934: [...lass="footer-link">3 Months ´┐¢ ´┐¢39</a></li>                  ...]
+  FILE: blog-post-2.html
+  pos 8734: [...climax of the movie approaches´┐¢or a crucial penalty is about...]
+  pos 8776: [...l penalty is about to be taken´┐¢the screen freezes. The dread...]
+  pos 11323: [...e connected to your home Wi-Fi´┐¢from your smartphone to your ...]
+  pos 11361: [...ur smartphone to your Smart TV´┐¢is automatically encrypted an...]
+  pos 12916: [...gline">Premium IPTV streaming ´┐¢ 15,000+ channels, 4K quality...]
+  FILE: blog.html
+  pos 5579: [...="IPTV Tips &amp; Guides Blog ´┐¢ OttOcean IPTV"> <meta proper...]
+  pos 6020: [...="IPTV Tips &amp; Guides Blog ´┐¢ OttOcean IPTV"> <meta name="...]
+  pos 7720: [...  <span class="page-hero-tag">´┐¢? Tips & Guides</span>       ...]
+  pos 15949: [...15,000+ channels for 24 hours ´┐¢ no payment needed. Just mess...]
+  pos 18049: [...gline">Premium IPTV streaming ´┐¢ 15,000+ channels, 4K quality...]
+  FILE: contact.html
+  pos 290: [...=1.0">      <title>Contact Us ´┐¢ OttOcean IPTV</title>      <...]
+  pos 1173: [...og:title" content="Contact Us ´┐¢ OttOcean IPTV"> <meta proper...]
+  pos 1618: [...er:title" content="Contact Us ´┐¢ OttOcean IPTV"> <meta name="...]
+  pos 3486: [...ready to subscribe? Reach out ´┐¢ we're here around the clock ...]
+  pos 5375: [...ort team. No waiting, no bots ´┐¢ real people, real help.</p> ...]
+  FILE: faq.html
+  pos 283: [...l-scale=1.0">      <title>FAQ ´┐¢ OttOcean IPTV</title>      <...]
+  pos 5029: [...perty="og:title" content="FAQ ´┐¢ OttOcean IPTV"> <meta proper...]
+  pos 5481: [...="twitter:title" content="FAQ ´┐¢ OttOcean IPTV"> <meta name="...]
+  pos 7216: [...  <span class="page-hero-tag">´┐¢?´┐¢ Got Questions?</span>     ...]
+  pos 7218: [...<span class="page-hero-tag">´┐¢?´┐¢ Got Questions?</span>       ...]
+  FILE: firestick-guide.html
+  pos 6299: [...droid OS, is an ideal platform´┐¢once you know how to set it u...]
+  pos 8816: [... you experience ISP throttling´┐¢read our guide: <a href="vpn-...]
+  pos 9552: [...gline">Premium IPTV streaming ´┐¢ 15,000+ channels, 4K quality...]
+  pos 10434: [... class="footer-link">3 Months ´┐¢ ´┐¢39</a></li>                ...]
+  pos 10436: [...lass="footer-link">3 Months ´┐¢ ´┐¢39</a></li>                  ...]
+  FILE: index.html
+  pos 1013: [...      <!-- FontAwesome 6 Free ´┐¢ used for Content Categories ...]
+  pos 7358: [... 15,000+ Channels, 4K Quality ´┐¢ the ultimate OttOcean IPTV a...]
+  pos 10386: [...="db-stream-meta">4K Ultra HD ´┐¢ Stable Stream</p>           ...]
+  pos 18702: [...    <span class="marquee-tag">´┐¢? Global Coverage</span>     ...]
+  pos 19799: [...orthy series, and live sports ´┐¢ all in stunning 4K UHD throu...]
+  FILE: pricing.html
+  pos 293: [...0">      <title>Pricing Plans ´┐¢ OttOcean IPTV</title>      <...]
+  pos 397: [...TV pricing: Choose plans from ´┐¢39 (3ÔÇ»months), ´┐¢49 (6ÔÇ»months)...]
+  pos 413: [...se plans from ´┐¢39 (3ÔÇ»months), ´┐¢49 (6ÔÇ»months) or ´┐¢65 (12ÔÇ»mont...]
+  pos 431: [...(3ÔÇ»months), ´┐¢49 (6ÔÇ»months) or ´┐¢65 (12ÔÇ»months) ´┐¢ flexible, no...]
+  pos 447: [...(6ÔÇ»months) or ´┐¢65 (12ÔÇ»months) ´┐¢ flexible, no contracts, free...]
+  FILE: script.js
+  pos 65: [...===================    Navbar ´┐¢ scroll-driven background + m...]
+  pos 2051: [...   INFINITE MARQUEE GENERATOR ´┐¢ RELIABLE DIRECT URLS    ====...]
+  FILE: style.css
+  pos 2424: [...navbar) ---- */ /* Wrapper li ´┐¢ pushes the button to the far...]
+  pos 25030: [...================    SECTION 1 ´┐¢ CONTENT CATEGORIES GRID    4...]
+  pos 27186: [...et;     /* Lift-up transition ´┐¢ cubic-bezier gives a springy...]
+  pos 27988: [...}  /* Per-card accent colours ´┐¢ easy to modify */ #cat-sport...]
+  pos 28798: [...e(1.1); }  /* Colour variants ´┐¢ background + icon tint + sub...]
