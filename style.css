@@ -1,10 +1,17 @@
 /* ===== RESET & BASE ===== */
+html {
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 body {
@@ -13,6 +20,8 @@ body {
     color: #e0d8f0;
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
 }
 
 a {
@@ -286,15 +295,20 @@ header.scrolled {
     transform: translateY(-7px) rotate(-45deg);
 }
 
-/* ---- Responsive: ? 768 px ---- */
+/* ---- Responsive: ≤ 768 px ---- */
 @media (max-width: 768px) {
     .nav-container {
-        padding: 0 20px;
+        padding: 0 16px;
         height: 62px;
+        width: 100%;
+        max-width: 100vw;
     }
 
     .nav-toggle {
         display: flex;
+        flex-shrink: 0;
+        z-index: 1100;
+        position: relative;
     }
 
     .nav-links {
@@ -303,10 +317,11 @@ header.scrolled {
         top: 62px;
         left: 0;
         right: 0;
+        width: 100vw;
         flex-direction: column;
         align-items: stretch;
         gap: 0;
-        background: rgba(15, 5, 28, 0.97);
+        background: rgba(15, 5, 28, 0.98);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         border-bottom: 1px solid rgba(255, 255, 255, 0.07);
@@ -317,10 +332,12 @@ header.scrolled {
         opacity: 0;
         pointer-events: none;
         transition: max-height 0.35s ease, opacity 0.3s ease, padding 0.3s ease;
+        z-index: 1050;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
     }
 
     .nav-links.open {
-        max-height: 360px;
+        max-height: 420px;
         opacity: 1;
         pointer-events: auto;
     }
@@ -338,6 +355,7 @@ header.scrolled {
         border-radius: 10px;
         animation: none;
         width: 100%;
+        max-width: 100%;
     }
 
     .nav-link {
@@ -360,6 +378,8 @@ header.scrolled {
     padding: 0 40px;
     position: relative;
     overflow: hidden;
+    width: 100%;
+    max-width: 100vw;
 }
 
 /* Background ambient blobs */
@@ -396,6 +416,7 @@ header.scrolled {
     align-items: center;
     gap: 64px;
     padding: 120px 0 80px;
+    min-width: 0;
 }
 
 /* ---- Left column (50%) ---- */
@@ -4317,15 +4338,15 @@ header.scrolled {
 
 /* ===== FLOATING WHATSAPP WIDGET ===== */
 .floating-wa {
-    position: fixed;
-    bottom: 28px;
-    right: 28px;
-    z-index: 9999;
+    position: fixed !important;
+    bottom: 28px !important;
+    right: 28px !important;
+    z-index: 99999 !important;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background: linear-gradient(135deg, #25d366, #128c7e);
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45), 0 0 0 0 rgba(37, 211, 102, 0.5);
@@ -4333,10 +4354,15 @@ header.scrolled {
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     text-decoration: none;
     line-height: 1;
+    /* Prevent it from being hidden behind other elements */
+    isolation: isolate;
+    will-change: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 
 .floating-wa:hover {
-    transform: scale(1.1);
+    transform: scale(1.12) translateZ(0);
     box-shadow: 0 8px 32px rgba(37, 211, 102, 0.65);
 }
 
@@ -4350,6 +4376,7 @@ header.scrolled {
     line-height: 1;
     font-family: 'Font Awesome 6 Brands', 'FontAwesome' !important;
     font-weight: 400 !important;
+    pointer-events: none;
 }
 
 @keyframes wa-pulse-ring {
@@ -4360,6 +4387,11 @@ header.scrolled {
 
 /* ===== GLOBAL MOBILE SPACING FIXES ===== */
 @media (max-width: 768px) {
+    /* === CRITICAL: prevent ALL elements from overflowing screen === */
+    img, video, iframe, table, pre, canvas, svg {
+        max-width: 100%;
+    }
+
     /* Prevent any card/section from touching screen edges */
     #categories,
     #features,
@@ -4395,6 +4427,20 @@ header.scrolled {
     #comparison {
         padding-top: 80px;
         padding-bottom: 80px;
+        overflow: hidden;
+    }
+
+    /* Comparison table: force contained width */
+    .comparison-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        margin: 24px 0 0;
+    }
+
+    .comparison-table {
+        min-width: 0;
+        width: 100%;
     }
 
     /* Contact section */
@@ -4415,11 +4461,56 @@ header.scrolled {
         padding-bottom: 80px;
     }
 
-    /* Floating WA on very small screens */
+    /* Hero inner — prevent overflow from wide visual */
+    .hero-inner {
+        padding-top: 100px;
+        padding-bottom: 60px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    /* Dashboard visual — prevent overflow */
+    .hero-visual {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .hero-img-placeholder {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .db-float-badge {
+        display: none; /* hide overflow badge on mobile */
+    }
+
+    /* Pricing grid - single column, full width */
+    .pricing-grid {
+        max-width: 100%;
+    }
+
+    .pricing-card.popular {
+        transform: scale(1);
+    }
+
+    /* Floating WA — always visible, pinned */
     .floating-wa {
-        bottom: 20px;
-        right: 16px;
-        width: 52px;
-        height: 52px;
+        bottom: 20px !important;
+        right: 16px !important;
+        width: 54px !important;
+        height: 54px !important;
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    .floating-wa i {
+        font-size: 1.6rem !important;
+    }
+
+    /* Ensure header stays on top of everything */
+    header {
+        z-index: 1000;
     }
 }
