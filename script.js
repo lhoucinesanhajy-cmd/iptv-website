@@ -1,5 +1,5 @@
 /* ===================================================
-   Navbar — scroll-driven background + mobile toggle
+   Navbar � scroll-driven background + mobile toggle
    Works across all pages (multi-page architecture)
    =================================================== */
 
@@ -7,7 +7,7 @@ const header    = document.getElementById('site-header');
 const navToggle = document.getElementById('navToggle');
 const navLinks  = document.getElementById('nav-links');
 
-/* 1. Transparent → dark background on scroll */
+/* 1. Transparent ? dark background on scroll */
 function onScroll() {
     if (window.scrollY > 20) {
         header.classList.add('scrolled');
@@ -58,7 +58,7 @@ const yearEl = document.getElementById('footer-year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 /* ===================================================
-   INFINITE MARQUEE GENERATOR — RELIABLE DIRECT URLS
+   INFINITE MARQUEE GENERATOR � RELIABLE DIRECT URLS
    =================================================== */
 function initMarquee() {
     const track = document.getElementById('marqueeTrack');
