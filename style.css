@@ -4514,3 +4514,12 @@ header.scrolled {
         z-index: 1000;
     }
 }
+ / *   A r t i c l e   H e r o   I m a g e   s t y l i n g   * / 
+ . a r t i c l e - h e r o - i m a g e   { 
+         w i d t h :   1 0 0 % ; 
+         b o r d e r - r a d i u s :   1 2 p x ; 
+         m a r g i n - b o t t o m :   3 0 p x ; 
+         b o x - s h a d o w :   0   1 0 p x   3 0 p x   r g b a ( 0 , 0 , 0 , 0 . 5 ) ; 
+         d i s p l a y :   b l o c k ; 
+ }  
+ 
