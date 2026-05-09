@@ -52,7 +52,14 @@
         "bestRating": "5",
         "worstRating": "1"
       },
-      "offers": { "@type": "Offer", "price": "10.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
+      "offers": { 
+        "@type": "Offer", 
+        "price": "10.00", 
+        "priceCurrency": "USD", 
+        "availability": "https://schema.org/InStock",
+        "shippingDetails": { "@type": "OfferShippingDetails", "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "USD" } },
+        "hasMerchantReturnPolicy": { "@type": "MerchantReturnPolicy", "returnPolicyCategory": "https://schema.org/NoReturns" }
+      }
     }
     </script>
 </head>
