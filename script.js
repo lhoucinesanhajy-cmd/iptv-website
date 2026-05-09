@@ -1,3 +1,10 @@
+/* Force HTTPS and WWW */
+if (window.location.hostname.includes('ottocean.sbs')) {
+    if (window.location.hostname !== 'www.ottocean.sbs' || window.location.protocol !== 'https:') {
+        window.location.replace('https://www.ottocean.sbs' + window.location.pathname + window.location.search);
+    }
+}
+
 /* ===================================================
    Navbar � scroll-driven background + mobile toggle
    Works across all pages (multi-page architecture)
