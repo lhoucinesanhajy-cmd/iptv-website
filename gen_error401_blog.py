@@ -1,0 +1,380 @@
+import os
+
+title = "How to Fix IPTV Error 401 Unauthorized & Playlist Not Loading (2026 Guide)"
+filename = "c:\\Users\\admin\\Desktop\\iptv-website\\blog\\fix-iptv-error-401.html"
+
+os.makedirs(os.path.dirname(filename), exist_ok=True)
+
+content = f"""<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title} | OttOcean IPTV</title>
+    <meta name="description" content="Detailed 2026 guide on how to fix IPTV Error 401 Unauthorized, playlist not loading issues, MAC address blocks, and Xtream Codes API failures.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+    
+    <style>
+        .article-container {{
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px 80px;
+            color: #d1d5db;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }}
+
+        .article-header {{
+            text-align: center;
+            margin-bottom: 50px;
+        }}
+
+        .article-tag {{
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(168,85,247,0.15);
+            color: #c084fc;
+            border: 1px solid rgba(168,85,247,0.3);
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }}
+
+        .article-title {{
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }}
+
+        .article-meta {{
+            font-size: 0.9rem;
+            color: rgba(224,216,240,0.5);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }}
+
+        .article-content h2 {{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            color: #ffffff;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }}
+        
+        .article-content h3 {{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.4rem;
+            color: #ffffff;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }}
+
+        .article-content p {{
+            margin-bottom: 24px;
+        }}
+
+        .article-content ul, .article-content ol {{
+            margin-bottom: 24px;
+            padding-left: 20px;
+        }}
+
+        .article-content li {{
+            margin-bottom: 10px;
+        }}
+
+        .article-content a {{
+            color: #a855f7;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }}
+
+        .article-content a:hover {{
+            border-bottom: 1px solid #a855f7;
+        }}
+        
+        .tech-table {{
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }}
+        
+        .tech-table th, .tech-table td {{
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }}
+        
+        .tech-table th {{
+            background: rgba(168, 85, 247, 0.1);
+            color: #fff;
+            font-weight: 600;
+        }}
+
+        .faq-section {{
+            margin-top: 50px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+        }}
+
+        .faq-item {{
+            margin-bottom: 20px;
+        }}
+
+        .faq-question {{
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }}
+
+        @media (max-width: 768px) {{
+            .article-title {{ font-size: 2rem; }}
+            .article-container {{ padding: 30px 20px 60px; }}
+            .tech-table th, .tech-table td {{ padding: 10px; font-size: 0.9rem; }}
+        }}
+    </style>
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+</head>
+
+<body>
+
+    <header id="site-header">
+        <nav class="nav-container">
+            <a href="../index.html" class="logo" id="nav-logo">OttOcean IPTV</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../index.html" class="nav-link" id="nav-home">Home</a></li>
+                <li><a href="../pricing.html" class="nav-link" id="nav-pricing">Pricing</a></li>
+                <li><a href="../faq.html" class="nav-link" id="nav-faq">FAQ</a></li>
+                <li><a href="../contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+                <li><a href="../blog.html" class="nav-link" id="nav-blog">Blog</a></li>
+                <li class="nav-trial-li">
+                    <a href="https://wa.me/447347586107?text=Hello!%20I%20am%20interested%20in%20the%2024H%20Free%20Trial." class="nav-trial-btn pulse-btn" id="nav-free-trial" target="_blank" rel="noopener">
+                        24H Free Trial
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="article-container">
+        <div class="article-header">
+            <span class="article-tag">Troubleshooting Guide</span>
+            <h1 class="article-title">{title}</h1>
+            <div class="article-meta">
+                <span><i class="fa-regular fa-calendar"></i> May 18, 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 20 min read</span>
+            </div>
+        </div>
+
+        <div class="article-content">
+            <p>Picture this scenario: you've been anticipating a major sporting event or a highly awaited movie premiere all week. You've prepared your snacks, settled onto your comfortable couch, grabbed your remote, and launched your IPTV application. You navigate to your favorite channel, ready to immerse yourself in high-definition entertainment. But instead of crystal-clear video, you are abruptly greeted by a dark, unforgiving screen displaying a stark, highly frustrating message: <strong>"Error 401 Unauthorized"</strong> or <strong>"Playlist Not Loading."</strong> Your perfect evening is instantly derailed, replaced by the stress of technical troubleshooting.</p>
+
+            <p>If you're reading this, you are intimately familiar with the anger and disappointment that accompanies this exact situation. It is one of the most common, yet deeply infuriating, roadblocks in the world of digital streaming. You are not alone in this struggle. Every day, thousands of users across the globe encounter these identical connection failures, often leaving them completely locked out of the services they have rightfully paid for. The sheer volume of variables involved—from network configurations and application caches to server-side authentication protocols—can make finding a solution feel like searching for a needle in a digital haystack.</p>
+
+            <p>However, there is no need to panic or permanently abandon your streaming setup. These errors, while exceptionally annoying, are almost always entirely solvable with the correct diagnostic approach. The key lies in understanding exactly what your device is trying to tell you and systematically eliminating the potential causes. In this exhaustive, highly detailed 2026 technical guide, we will completely dissect the root causes behind <strong>Error 401</strong> and playlist loading failures. We are moving beyond generic, unhelpful advice like "just restart your app." Instead, we will equip you with a rigorous, step-by-step masterclass designed to resolve authentication errors, bypass network blocks, rectify configuration blunders, and ultimately restore your flawless streaming experience.</p>
+
+            <h2>What Does Error 401 Actually Mean? The Technical Breakdown</h2>
+
+            <p>To effectively defeat an error, you must first understand its fundamental nature. In the realm of internet protocols, <strong>Error 401</strong> is not a random glitch; it is a very specific, highly standardized HTTP status code. In the simplest terms possible, an HTTP 401 status code translates directly to <strong>"Unauthorized."</strong></p>
+
+            <p>When you open your IPTV app—whether it is TiviMate, IPTV Smarters Pro, or XCIPTV—the software immediately attempts to establish a handshake with your provider's central server. It essentially knocks on the server's digital door and presents your "credentials" (your username, password, or MAC address) as a VIP pass to access the video streams. When the server reviews this pass and determines it is invalid, it slams the door shut and transmits the 401 error code back to your device. This means the server has successfully received your request, but it is explicitly refusing to grant you access.</p>
+
+            <p>This rejection is rarely an accident. It is a deliberate security response triggered by one of several distinct, highly identifiable issues:</p>
+
+            <ul>
+                <li><strong>Incorrect Credentials (Typos):</strong> The most frequent culprit. Even a single misplaced character in a massive, complex password string will trigger an immediate 401 rejection. The server demands absolute perfection in your login details.</li>
+                <li><strong>Expired Subscription:</strong> If your payment cycle has lapsed, your provider's automated billing system will instantly flag your account as inactive. The server recognizes your username but notes that your access rights have expired, resulting in a 401 error.</li>
+                <li><strong>MAC Address Mismatch:</strong> Many services link your account directly to the unique hardware identifier (MAC address) of your specific streaming device. If you attempt to log in from a new television, a different Firestick, or if the provider's database recorded the MAC address incorrectly, the server will detect the discrepancy and block the connection.</li>
+                <li><strong>IP Blocking or Geo-Restrictions:</strong> The server might be perfectly fine with your credentials, but it may be explicitly programmed to reject connections originating from your specific IP address or geographical region. This often happens if the provider suspects account sharing (e.g., simultaneous logins from different countries) or if your ISP is utilizing aggressive blocking measures.</li>
+            </ul>
+
+            <p>Understanding this "Unauthorized" foundation is critical. It shifts your troubleshooting focus away from "my app is broken" and towards "my authentication data is failing." Now that we have diagnosed the core issue, let us systematically implement the most effective, technically sound solutions to force that digital door open.</p>
+
+            <h2>Step-by-Step Fixes: Restoring Your Connection</h2>
+
+            <p>We will progress through these fixes logically, starting with the most common user errors and advancing to complex network configurations. Do not skip steps; the simplest solution is often the correct one.</p>
+
+            <h3>1. Double-Checking M3U Links and Xtream Codes API (The Typo Trap)</h3>
+
+            <p>The vast majority of IPTV configurations utilize either an M3U playlist URL or the Xtream Codes API (which breaks the login down into a server URL, a username, and a password). Both methods require meticulous, error-free data entry. A 401 Unauthorized error is essentially the server telling you, "I don't recognize these credentials."</p>
+
+            <p><strong>The Action Plan:</strong></p>
+            <ol>
+                <li><strong>Purge and Re-enter:</strong> Do not simply glance at your currently entered details; human eyes are notoriously bad at spotting minor typos in long strings of text. Completely delete your current login profile within the app.</li>
+                <li><strong>Beware of Invisible Spaces:</strong> If you are copying and pasting credentials from an email or a WhatsApp message (especially on Android or iOS devices), your operating system will frequently append an invisible "space" character to the end of the string. The server reads this space as part of your password, resulting in an instant 401 failure. Manually verify that there are zero trailing spaces after your username or password.</li>
+                <li><strong>Case Sensitivity is Absolute:</strong> "Password123" is entirely different from "password123". Ensure your capitalization is flawless. Pay special attention to easily confused characters, such as a lowercase 'l' (lima) versus an uppercase 'I' (india), or the letter 'O' versus the number '0'.</li>
+                <li><strong>Server URL Accuracy:</strong> Ensure the host URL is exact. If your provider's URL is <code>http://server.url:8080</code>, forgetting the <code>http://</code> prefix or the <code>:8080</code> port number will inevitably cause the connection to fail, often manifesting as a 401 or a generic "Playlist Not Loading" timeout.</li>
+            </ol>
+            <p>For a detailed walkthrough on setting up your player flawlessly the first time, refer to our comprehensive guide: <a href="blog-post-1.html">[Insert Link: Smarters Pro Setup Guide]</a>.</p>
+
+            <h3>2. Fixing MAC Address Issues (Portal URL Blocks)</h3>
+
+            <p>If you utilize Stalker Portal connections (often used with MAG boxes or apps emulating MAG environments like STBEMU), your authentication relies entirely on your device's <strong>Virtual MAC Address</strong>. This is a unique, 12-character alphanumeric identifier (e.g., 00:1A:79:XX:XX:XX).</p>
+
+            <p>If the MAC address stored on your device does not perfectly match the MAC address registered on your provider's server dashboard, you will consistently receive an Error 401 or a perpetual "Portal Loading" screen.</p>
+
+            <p><strong>The Action Plan:</strong></p>
+            <ol>
+                <li><strong>Locate Your Device MAC:</strong> Within your app (e.g., STBEMU), navigate to Settings > Profiles > [Your Profile] > STB Configuration. Here, you will find the active MAC address.</li>
+                <li><strong>Verify with Your Provider:</strong> Contact your provider's support team immediately. Provide them with the MAC address displayed on your screen and ask them to confirm it matches the address linked to your active subscription.</li>
+                <li><strong>Device Swapping Problems:</strong> If you recently upgraded your streaming device (e.g., moving from an old Firestick to a new Nvidia Shield) but attempted to use the same Portal URL, it will fail. A new device possesses a new physical MAC address. You must explicitly inform your provider to update your account with the new hardware identifier. Until they make this change on their server, you will remain unauthorized.</li>
+            </ol>
+
+            <h3>3. Aggressive Network Troubleshooting: Overcoming ISP Blocks and Cache Corruption</h3>
+
+            <p>If your credentials are flawlessly entered and your account is demonstrably active, the culprit is almost certainly your local network environment or the internal state of your streaming application. Modern Internet Service Providers (ISPs) actively deploy aggressive deep packet inspection (DPI) algorithms designed to disrupt unverified streaming traffic. Furthermore, apps can accumulate massive, corrupted data caches that ruin functionality.</p>
+
+            <p><strong>The Action Plan:</strong></p>
+            <ol>
+                <li><strong>The Deep Cache Purge:</strong> When an app continually attempts to load a massive, heavy playlist (containing tens of thousands of channels and VODs) and fails, the corrupted, partial data is often saved in the app's cache. Subsequent login attempts simply load this broken cached data instead of establishing a fresh server connection.
+                    <br><em>On Android/FireOS:</em> Navigate to your device's main Settings > Applications > Manage Installed Applications. Select your IPTV app (e.g., Smarters Pro or Tivimate). First, click <strong>"Force Stop."</strong> Then, critically, click <strong>"Clear Cache."</strong> Do not click "Clear Data" unless you are prepared to re-enter all your login details from scratch. Relaunch the app and attempt to update the playlist.</li>
+                <li><strong>The Hard Network Reboot:</strong> Your local router manages all IP routing. Over time, routing tables can become congested or corrupted, leading to specific connections failing while general internet browsing remains functional. Unplug your router directly from the wall socket. Wait a full, uninterrupted 60 seconds. This allows residual power to drain and the system memory to completely clear. Plug it back in and wait for the connection to fully stabilize before launching your app.</li>
+                <li><strong>Alternative Network Testing:</strong> To definitively determine if your home ISP is the source of the blockage, disconnect your streaming device from your home Wi-Fi network. Instead, activate the Mobile Hotspot feature on your smartphone (which utilizes a completely different cellular network architecture) and connect your streaming device to this hotspot. If the playlist loads instantly and the 401 error vanishes over the cellular connection, you have absolute confirmation that your home ISP is actively blocking your provider's server.</li>
+            </ol>
+
+            <h3>4. The Critical Role of a VPN in Bypassing ISP Blocks</h3>
+
+            <p>If your testing confirms that your ISP (such as Sky, BT, Virgin Media, or Movistar) is actively blocking the connection to the playlist servers, you must implement a Virtual Private Network (VPN) immediately. A 401 error or a blank playlist is often the direct result of your ISP's firewall silently dropping your connection requests to known streaming IP addresses.</p>
+
+            <p>A high-quality VPN completely encrypts your internet traffic, hiding the destination (your provider's server) from your ISP. When you activate a VPN, your ISP only sees secure, encrypted data flowing to a random server; they cannot see that you are downloading an M3U playlist. This effectively bypasses all local censorship and throttling.</p>
+
+            <p><strong>The VPN Strategy:</strong></p>
+            <ul>
+                <li><strong>Protocol Matters:</strong> For the lowest latency and highest success rate in bypassing aggressive DPI, utilize modern protocols like WireGuard. Older protocols might be detected and throttled.</li>
+                <li><strong>Server Rotation:</strong> If your chosen VPN server is also blocked (a common occurrence during major sporting events), systematically switch to different server locations—even within the same country—until you find an unflagged IP address that allows the playlist to download.</li>
+                <li><strong>Split Tunneling:</strong> If available, ensure only your streaming app is routed through the VPN to maximize bandwidth efficiency.</li>
+            </ul>
+            <p>To master your security setup and ensure maximum performance, you must read our deep dive: <a href="best-vpn-protocol-settings-iptv.html">[Insert Link: Best VPN protocol settings]</a>.</p>
+
+            <h2>When to Give Up on Your Current Provider</h2>
+
+            <p>We have covered extensive troubleshooting—from credential verification to advanced network routing and VPN deployment. If you have rigorously executed every single step detailed above, and you are still staring at an Error 401 Unauthorized or a perpetually blank playlist, you must face a difficult reality. The problem is no longer on your end. The problem is your provider.</p>
+
+            <p>The unregulated IPTV market is notoriously volatile. "Fly-by-night" resellers frequently oversell their server capacity, resulting in catastrophic crashes during peak hours. In worst-case scenarios, massive provider networks are shut down by authorities, or the operators simply abandon the servers and disappear with their customers' subscription money. This is often referred to as an "exit scam."</p>
+
+            <p><strong>Signs It's Time to Walk Away:</strong></p>
+            <ul>
+                <li>Your support tickets, emails, or WhatsApp messages remain entirely unread or unanswered for over 48 hours.</li>
+                <li>The provider's website, billing portal, or Telegram support channel has been deleted or is returning server errors (like 404 or 502).</li>
+                <li>You have tested your credentials on multiple devices, multiple internet connections (including cellular hotspots), and multiple premium VPN servers, and the 401 error persists universally.</li>
+            </ul>
+
+            <p>When this occurs, continuing to troubleshoot is a waste of your valuable time. The server is dead. It is time to upgrade to a premium, stable, and professionally managed service. You need a platform built on enterprise-grade infrastructure that guarantees uptime and provides responsive, 24/7 technical support. When you are ready to experience true reliability, we strongly recommend you transition to <a href="https://www.ottocean.sbs/">ottocean</a>. Stop settling for pixelated streams, unresponsive support, and sudden server blackouts. Upgrade your viewing experience to the standard you deserve.</p>
+
+            <div class="faq-section">
+                <h2>Frequently Asked Questions (FAQ)</h2>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">1. Why does my M3U link work on my phone but give Error 401 on my Smart TV?</h3>
+                    <p>This is highly indicative of an IP block or a connection limit. Many services restrict your account to a single simultaneous connection. If your phone app is still running in the background, the server will block the TV's login attempt with a 401 error. Alternatively, your Smart TV's specific IP address or the ISP routing your TV's connection might be blocking the traffic, while your phone (especially if on cellular data) has an unrestricted path. Always completely close the app on one device before opening it on another, and ensure both devices are on the same network environment if testing.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">2. How often should I manually update my Xtream Codes playlist?</h3>
+                    <p>Under normal circumstances, modern applications like Smarters Pro or Tivimate are configured to automatically refresh the playlist and electronic program guide (EPG) upon launch or every 24 hours. However, if your provider has recently added a massive VOD library or implemented emergency server migrations, forcing a manual update is highly recommended. Navigate to the app's settings and look for "Update Playlist" or "Refresh Data." Doing this weekly ensures you have the most current server routing and channel lineups, reducing the likelihood of encountering dead links.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">3. Can a cheap or free VPN cause my playlist to stop loading?</h3>
+                    <p>Absolutely. In fact, utilizing a free or exceptionally low-tier VPN is often far more detrimental than using no VPN at all. Free VPNs operate heavily congested, low-bandwidth servers. Furthermore, their IP addresses are universally recognized and aggressively blacklisted by almost all premium streaming platforms and providers. When you connect via a free VPN, your request is immediately flagged as suspicious, leading to instantaneous 401 Unauthorized rejections or severe throttling that prevents the massive playlist file from ever downloading. Always invest in a reputable, premium VPN service.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">4. My provider told me they "reset my line." What does this mean, and what should I do?</h3>
+                    <p>When a provider states they have "reset your line," it means they have manually purged your active session data from their central server dashboard. This is a common administrative fix used when the server incorrectly believes your account is already logged in (a "ghost connection"), or when your MAC address registration has become corrupted. After a line reset, you must forcefully restart your application (use "Force Stop" in Android settings) and, in some cases, entirely re-enter your Xtream Codes or M3U credentials to establish a completely fresh handshake with the server.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">5. Is there a difference between a 401 error and a 403 error in IPTV?</h3>
+                    <p>Yes, significantly. A 401 Unauthorized error means your credentials (username/password) are completely invalid or unrecognized; you are not who you claim to be. A 403 Forbidden error, however, means the server recognizes your credentials and confirms you are a valid user, but it is explicitly denying you access to a specific resource. This usually occurs if you are attempting to access premium channels (like PPV events) that are not included in your specific subscription package tier, or if a geo-block is preventing access to a regional broadcast despite a valid login.</p>
+                </div>
+            </div>
+
+            <h2>Stop Wasting Time with Dead Links</h2>
+
+            <p>Troubleshooting endless connection errors, deciphering HTTP status codes, and battling aggressive ISP throttling should not be a mandatory prerequisite for relaxing on your couch. You pay for entertainment, not a second job in network administration. If your current provider is constantly leaving you stranded with Error 401 screens and unresponsive support channels, you are actively wasting your money and your free time.</p>
+
+            <p>It is time to eliminate the frustration entirely. Experience the massive difference that premium, enterprise-grade infrastructure and localized, high-bandwidth servers can make. Claim your 24-hour Free Trial at ottocean right now. Get an instant, fully functional playlist, pristine 4K quality, and absolute reliability. Do not miss another crucial match or premiere—upgrade your streaming today.</p>
+
+        </div>
+    </main>
+
+    <footer id="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo">OttOcean IPTV</a>
+                <p class="footer-tagline">Premium IPTV streaming &bull; 15,000+ channels &bull; 4K quality &bull; 99.9% uptime.</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-col-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="../index.html" class="footer-link">Home</a></li>
+                    <li><a href="../pricing.html" class="footer-link">Pricing</a></li>
+                    <li><a href="../faq.html" class="footer-link">FAQ</a></li>
+                    <li><a href="../contact.html" class="footer-link">Contact</a></li>
+                    <li><a href="../blog.html" class="footer-link">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-col-title">OUR PLANS</h4>
+                <ul class="footer-links">
+                    <li><a href="../pricing.html" class="footer-link">3 Months &mdash; &euro;39</a></li>
+                    <li><a href="../pricing.html" class="footer-link">6 Months &mdash; &euro;49</a></li>
+                    <li><a href="../pricing.html" class="footer-link">12 Months &mdash; &euro;65</a></li>
+                    <li><a href="https://wa.me/447347586107?text=Hello!%20I%20am%20interested%20in%20the%2024H%20Free%20Trial." class="footer-link" target="_blank" rel="noopener">Free 24h Trial</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-col-title">Get in Touch</h4>
+                <ul class="footer-links footer-contact-list">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <a href="mailto:support@ottocean.com" class="footer-link">support@ottocean.com</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span>Available 24/7 worldwide</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">&copy; <span id="footer-year"></span> OttOcean IPTV. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                <a href="#" class="footer-bottom-link">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+
+    <a href="https://wa.me/447347586107?text=Hello!%20I%20have%20a%20question%20about%20your%20service." class="floating-wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+</html>"""
+
+with open(filename, "w", encoding="utf-8") as f:
+    f.write(content)
+
+print(f"Blog post created successfully at {filename}.")
