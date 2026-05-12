@@ -66,4 +66,10 @@
     <priority>0.3</priority>
     <lastmod>2026-05-11</lastmod>
   </url>
+  <url>
+    <loc>https://www.ottocean.sbs/blog/hls-vs-mpeg-dash.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-12</lastmod>
+  </url>
 </urlset>

@@ -1,0 +1,413 @@
+import os
+
+html_content = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 IPTV Players for Smart TVs (2026): Speed & UI/UX Compared - OttOcean</title>
+    <meta name="description" content="Looking for the fastest IPTV player? Compare the top 5 apps for Smart TVs in 2026. Expert UI/UX analysis and speed tests on ottocean.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+    
+    <style>
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px 80px;
+            color: #d1d5db;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .article-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .article-tag {
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(168,85,247,0.15);
+            color: #c084fc;
+            border: 1px solid rgba(168,85,247,0.3);
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+        }
+
+        .article-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .article-meta {
+            font-size: 0.9rem;
+            color: rgba(224,216,240,0.5);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .article-content h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            color: #ffffff;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .article-content h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.4rem;
+            color: #ffffff;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .article-content p {
+            margin-bottom: 24px;
+        }
+
+        .article-content ul, .article-content ol {
+            margin-bottom: 24px;
+            padding-left: 20px;
+        }
+
+        .article-content li {
+            margin-bottom: 10px;
+        }
+
+        .article-content a {
+            color: #a855f7;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .article-content a:hover {
+            border-bottom: 1px solid #a855f7;
+        }
+        
+        .tech-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .tech-table th, .tech-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .tech-table th {
+            background: rgba(168, 85, 247, 0.1);
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .faq-section {
+            margin-top: 50px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .article-title { font-size: 2rem; }
+            .article-container { padding: 30px 20px 60px; }
+            .tech-table th, .tech-table td { padding: 10px; font-size: 0.9rem; }
+        }
+    </style>
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which IPTV player is the fastest for Smart TVs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For sheer speed and zapping time, IBO Player and Nanomid are generally considered the fastest due to their lightweight codebase and direct hardware rendering."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is TiviMate better than IPTV Smarters Pro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TiviMate offers a more premium, cable-like Electronic Program Guide (EPG) interface and robust recording features, while IPTV Smarters Pro excels in universal compatibility across almost every device type."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does my IPTV app buffer even with fast internet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Buffering can occur due to lack of hardware acceleration, ISP throttling, or using an outdated player. Switching to a player optimized for your TV's processor often resolves this."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+
+    <header id="site-header">
+        <nav class="nav-container">
+            <a href="../index.html" class="logo" id="nav-logo">OttOcean IPTV</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="../index.html" class="nav-link" id="nav-home">Home</a></li>
+                <li><a href="../pricing.html" class="nav-link" id="nav-pricing">Pricing</a></li>
+                <li><a href="../faq.html" class="nav-link" id="nav-faq">FAQ</a></li>
+                <li><a href="../contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+                <li><a href="../blog.html" class="nav-link" id="nav-blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="article-container">
+        <a href="../blog.html" style="display: inline-block; margin-bottom: 20px; color: #a855f7; text-decoration: none; font-weight: 600;"><i class="fa-solid fa-arrow-left"></i> Back to Blog</a>
+        <div class="article-header">
+            <span class="article-tag">Software Review</span>
+            <h1 class="article-title">Top 5 IPTV Players for Smart TVs in 2026: Speed and UI/UX Comparison</h1>
+            <div class="article-meta">
+                <span><i class="fa-regular fa-calendar"></i> May 12, 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 25 min read</span>
+            </div>
+        </div>
+
+        <img src="https://i.ibb.co/YVZ96xG/Chat-GPT-Image-May-12-2026-12-50-27-AM.png" alt="Best IPTV Players 2026 Comparison for Smart TVs" style="width:100%; border-radius:12px; margin-bottom:25px;">
+
+        <div class="article-content">
+            <p>The digital streaming landscape has undergone a monumental shift as we progress deep into 2026. It is no longer just about gaining access to a massive library of channels and on-demand content; the focus has shifted entirely toward the user experience. Gone are the days when clunky, spreadsheet-like interfaces were acceptable. Today's viewers demand a seamless, intuitive, and visually stunning journey from the moment they turn on their Smart TVs. The evolution of Smart TV applications has prioritized UI/UX (User Interface and User Experience) to such a degree that the actual player you choose is just as critical as the service you subscribe to.</p>
+
+            <p>When you sit down to relax after a long day, the last thing you want is to battle with a confusing menu, endure slow loading times, or experience a sluggish Electronic Program Guide (EPG). You expect your Smart TV to respond instantly, rendering high-definition content with absolute fluidity. The difference between a mediocre streaming session and a premium, cable-like experience often boils down to the software engine driving your television. A well-designed player will intelligently cache data, leverage your TV's specific hardware components, and present content in an aesthetically pleasing, highly organized manner.</p>
+
+            <p>In this exhaustive 2026 technical review, we have rigorously tested and benchmarked the most prominent applications available on the market today. We evaluated them based on boot speed, interface fluidity, format support, and remote control optimization. If you are looking to elevate your viewing experience, especially when paired with a premium service from an <a href="../index.html">ottocean</a> connection, selecting the right software is the ultimate foundational step. For the best experience in these apps, understanding <a href="hls-vs-mpeg-dash.html">HLS vs MPEG-DASH protocols</a> is essential, as the underlying technology dictates how smoothly these applications operate.</p>
+
+            <h2>1. TiviMate IPTV Player: The Premium Interface Standard</h2>
+
+            <p>TiviMate has consistently held its position at the top echelon of streaming applications, and the 2026 iteration solidifies its dominance. What truly separates TiviMate from the competition is its obsessive focus on creating a premium, set-top-box-like interface. From the moment you launch the app, you are greeted with a meticulously crafted Electronic Program Guide (EPG) that rivals the most sophisticated cable and satellite systems on the market.</p>
+
+            <p><strong>Technical Performance & UI/UX:</strong> TiviMate's interface is characterized by its dark mode elegance and exceptionally smooth scrolling. The EPG is rendered with razor-sharp clarity, utilizing a grid layout that allows viewers to effortlessly scan through hours of programming. The channel zapping speed is near-instantaneous, thanks to its highly optimized internal playback engine. TiviMate aggressively caches EPG data in the background, ensuring that when you press the guide button on your remote, the information appears instantly without a spinning loading wheel.</p>
+
+            <p>Furthermore, TiviMate's robust recording capabilities and catch-up TV integration are flawlessly executed. The menus are completely customizable, allowing users to tweak everything from the transparency of the overlay to the exact number of hours displayed on the grid. If you are utilizing a high-end Android TV or NVIDIA Shield, TiviMate maximizes the hardware's potential, delivering a stutter-free, luxurious viewing experience.</p>
+
+            <h2>2. IPTV Smarters Pro (2026 Edition): Universal Compatibility</h2>
+
+            <p>If TiviMate is the luxury sedan of the streaming world, IPTV Smarters Pro is the rugged, go-anywhere sports utility vehicle. Its defining characteristic is its astonishing universal compatibility. Whether you are using a brand-new LG OLED, a legacy Samsung Smart TV, an Amazon Firestick, or even an Apple TV, Smarters Pro has a dedicated, highly functional build ready for deployment.</p>
+
+            <p><strong>Technical Performance & UI/UX:</strong> The 2026 Edition of IPTV Smarters Pro introduces a significant graphical overhaul. While previous versions were functional but somewhat utilitarian, the new update brings a much sleeker, modern dashboard. The multi-screen support feature is a standout, allowing users to watch up to four live events simultaneously—a crucial capability for sports enthusiasts. The interface is highly modular, clearly separating Live TV, Movies, and Series into distinct, easily navigable tiles.</p>
+
+            <p>Smarters Pro excels in handling massive playlists without crashing. Its database management has been significantly upgraded, meaning that even if you load a playlist containing tens of thousands of channels and VOD titles, the app will parse the data efficiently. While its EPG might not possess the absolute polish of TiviMate, its sheer reliability, cross-platform synchronization, and ease of setup make it a formidable contender. For those seeking an alternative to the standard setup, comparing IPTV Smarters vs TiviMate often comes down to a preference for multi-screen functionality versus EPG elegance.</p>
+
+            <h2>3. IBO Player / Nanomid: Pure Speed and Zapping Time</h2>
+
+            <p>For a specific subset of users, elaborate menus and extensive customization are secondary to one critical metric: raw speed. If your primary objective is the fastest possible channel zapping time and instant app boot, IBO Player and Nanomid are the undisputed champions of 2026. These players are built on remarkably lightweight codebases, specifically engineered to eliminate bloat and maximize responsiveness.</p>
+
+            <p><strong>Technical Performance & UI/UX:</strong> Both IBO Player and Nanomid strip away heavy graphical overlays in favor of a minimalist, hyper-responsive UI. When you press the channel up or down button, the transition is instantaneous. There is virtually zero latency between the command and the execution. This is particularly noticeable on mid-range Smart TVs, where heavier applications might exhibit input lag. </p>
+
+            <p>The interface is clean, straightforward, and strictly functional. They excel at direct hardware rendering, meaning they bypass unnecessary software layers and interact directly with your TV's video decoder. This direct approach not only drastically reduces buffering but also minimizes CPU load, keeping your television running smoothly. While they may lack the intricate recording features or PiP (Picture-in-Picture) modes of heavier apps, for pure, unadulterated live television switching, their speed is unmatched.</p>
+
+            <h2>4. OTT Navigator: Advanced Customization and Control</h2>
+
+            <p>OTT Navigator is the definitive application for the power user. If you are the type of viewer who wants total, granular control over every aspect of your streaming environment, this is the player for you. It offers an unprecedented level of technical settings and customization options, catering to users who understand network protocols, aspect ratios, and audio codecs.</p>
+
+            <p><strong>Technical Performance & UI/UX:</strong> The interface of OTT Navigator is highly customizable. You can alter the layout, color schemes, font sizes, and exactly how data is presented on screen. From a technical standpoint, it provides unparalleled control over playback behavior. Users can manually select which hardware decoder to utilize, adjust audio sync delays down to the millisecond, and configure complex network buffer sizes to counteract unstable internet connections.</p>
+
+            <p>This level of control makes OTT Navigator incredibly resilient. If you are experiencing playback issues on other players, diving into OTT Navigator's advanced settings often yields a solution. The learning curve is undoubtedly steeper than Smarters Pro, but the reward is a perfectly tailored viewing environment. Its sorting algorithms and search functions are highly advanced, allowing users to navigate massive VOD libraries with precision.</p>
+
+            <h2>5. GSE Smart IPTV: The Robust Engine and Codec Master</h2>
+
+            <p>GSE Smart IPTV has long been a staple in the streaming community, and its continued relevance in 2026 is a testament to its incredibly robust underlying engine. GSE is renowned for its exhaustive codec support. If you have a stream that refuses to play on other applications due to an obscure audio or video format, GSE Smart IPTV will almost certainly handle it flawlessly.</p>
+
+            <p><strong>Technical Performance & UI/UX:</strong> The user interface of GSE is distinctively functional. While it may not win awards for modern, minimalist design, it is logical and straightforward. Its true power lies beneath the surface. GSE's advanced playback engine supports dynamic language switching, multiple subtitle tracks, and complex M3U parsing.</p>
+
+            <p>It acts almost like a Swiss Army knife for digital video. Furthermore, it offers excellent remote control optimization, ensuring that the physical buttons on your remote map perfectly to the software's functions. For users who frequently interact with diverse, non-standardized video streams, GSE's ability to decode virtually anything thrown at it makes it an indispensable tool.</p>
+
+            <h2>Technical Comparison: The 2026 Benchmarks</h2>
+
+            <p>To provide a clear, objective overview, we have compiled the performance metrics of these top applications. The following table highlights the critical differences in speed, fluidity, and technical support.</p>
+
+            <table class="tech-table">
+                <thead>
+                    <tr>
+                        <th>Player Name</th>
+                        <th>Boot Speed</th>
+                        <th>UI Fluidity</th>
+                        <th>Format Support (M3U/Xtream/Stalker)</th>
+                        <th>Remote Control Optimization</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>TiviMate</strong></td>
+                        <td>Very Fast</td>
+                        <td>Excellent (Grid EPG)</td>
+                        <td>M3U, Xtream Codes</td>
+                        <td>Exceptional</td>
+                    </tr>
+                    <tr>
+                        <td><strong>IPTV Smarters Pro</strong></td>
+                        <td>Fast</td>
+                        <td>Very Good (Modular)</td>
+                        <td>M3U, Xtream, Stalker</td>
+                        <td>Very Good</td>
+                    </tr>
+                    <tr>
+                        <td><strong>IBO Player / Nanomid</strong></td>
+                        <td>Ultra-Fast</td>
+                        <td>Excellent (Minimalist)</td>
+                        <td>M3U, Xtream Codes</td>
+                        <td>Good</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OTT Navigator</strong></td>
+                        <td>Average</td>
+                        <td>Good (Highly Custom)</td>
+                        <td>M3U, Xtream, Stalker</td>
+                        <td>Excellent</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GSE Smart IPTV</strong></td>
+                        <td>Average</td>
+                        <td>Good (Functional)</td>
+                        <td>M3U, Xtream Codes</td>
+                        <td>Very Good</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Why Hardware Acceleration Matters</h2>
+
+            <p>You may have noticed that "hardware acceleration" is a frequently mentioned term when discussing these applications. To truly understand why some apps perform better than others, you must understand how this technology functions. When a video stream is delivered to your Smart TV, the data is compressed. To display the video on your screen, your TV must decompress (decode) this massive amount of data in real-time.</p>
+
+            <p>Without hardware acceleration, the application forces the TV's central processing unit (CPU) to handle this heavy lifting. The CPU is essentially the brain of the TV, designed to run the operating system, manage menus, and handle background tasks. Forcing the CPU to decode high-definition video is highly inefficient and quickly leads to overheating, dropped frames, lag, and the dreaded buffering wheel.</p>
+
+            <p>Hardware acceleration fundamentally changes this process. The top-tier apps discussed in this guide are programmed to bypass the CPU and send the encrypted video stream directly to the TV's dedicated Graphics Processing Unit (GPU) or specialized video decoding microchips. These specialized chips are infinitely more efficient at decoding video. By offloading the work to the GPU, the CPU remains free to ensure the user interface remains incredibly fluid and responsive. This is precisely how applications like TiviMate and IBO Player maintain lightning-fast menu navigation even while rendering a 4K live stream in the background. If you are experiencing constant playback issues, consult our detailed <a href="how-to-fix-iptv-buffering-freezing.html">Buffering Fix guide</a> to ensure your hardware settings are optimized.</p>
+
+            <h2>Conclusion: Making the Right Choice for Your TV</h2>
+
+            <p>Selecting the ultimate application from these top 5 IPTV players for Smart TVs depends entirely on your specific hardware and your personal viewing preferences. There is no single "perfect" app, but rather the perfect app for your unique setup.</p>
+
+            <p>For our dedicated ottocean readers utilizing high-end <strong>Android TV</strong> devices or NVIDIA Shields, the recommendation is unequivocally <strong>TiviMate</strong>. Its premium, cable-like interface and flawless EPG management are unmatched on the Android platform.</p>
+
+            <p>If you are embedded in the <strong>Samsung or LG Smart TV</strong> ecosystems (Tizen and webOS), <strong>IPTV Smarters Pro</strong> and <strong>IBO Player</strong> represent the pinnacle of performance. Smarters Pro provides excellent multi-screen features and universal stability, while IBO Player delivers the absolute fastest zapping times for viewers who demand immediate response.</p>
+
+            <p>For the technical tinkerers and power users who demand total control over their network parameters and codecs, <strong>OTT Navigator</strong> stands alone as the ultimate customizable powerhouse.</p>
+
+            <p>Ultimately, the software you choose is the lens through which you experience your digital content. By pairing a high-performance application with a premium, stable connection from <a href="../index.html">ottocean</a>, you guarantee a flawless, high-definition entertainment experience throughout 2026 and beyond.</p>
+
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Which IPTV player is the fastest for Smart TVs?</h3>
+                    <p>For sheer speed and zapping time, IBO Player and Nanomid are generally considered the fastest due to their lightweight codebase and direct hardware rendering.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Is TiviMate better than IPTV Smarters Pro?</h3>
+                    <p>TiviMate offers a more premium, cable-like Electronic Program Guide (EPG) interface and robust recording features, while IPTV Smarters Pro excels in universal compatibility across almost every device type.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Why does my IPTV app buffer even with fast internet?</h3>
+                    <p>Buffering can occur due to lack of hardware acceleration, ISP throttling, or using an outdated player. Switching to a player optimized for your TV's processor often resolves this. Furthermore, checking your connection against an <a href="../index.html">ottocean</a> standard can help diagnose the issue.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo">OttOcean IPTV</a>
+                <p class="footer-tagline">Premium IPTV streaming &bull; 15,000+ channels &bull; 4K quality &bull; 99.9% uptime.</p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-col-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="../index.html" class="footer-link">Home</a></li>
+                    <li><a href="../pricing.html" class="footer-link">Pricing</a></li>
+                    <li><a href="../faq.html" class="footer-link">FAQ</a></li>
+                    <li><a href="../contact.html" class="footer-link">Contact</a></li>
+                    <li><a href="../blog.html" class="footer-link">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-col-title">OUR PLANS</h4>
+                <ul class="footer-links">
+                    <li><a href="../pricing.html" class="footer-link">3 Months &mdash; &euro;39</a></li>
+                    <li><a href="../pricing.html" class="footer-link">6 Months &mdash; &euro;49</a></li>
+                    <li><a href="../pricing.html" class="footer-link">12 Months &mdash; &euro;65</a></li>
+                    <li><a href="https://wa.me/447347586107?text=Hello!%20I%20am%20interested%20in%20the%2024H%20Free%20Trial." class="footer-link" target="_blank" rel="noopener">Free 24h Trial</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-col-title">Get in Touch</h4>
+                <ul class="footer-links footer-contact-list">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <a href="mailto:support@ottocean.sbs" class="footer-link">support@ottocean.sbs</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span>Available 24/7 worldwide</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">&copy; <span id="footer-year"></span> OttOcean IPTV. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="../privacy-policy.html" class="footer-bottom-link">Privacy Policy</a>
+                <a href="../terms-of-service.html" class="footer-bottom-link">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+
+    <a href="https://wa.me/447347586107?text=Hello!%20I%20have%20a%20question%20about%20your%20service." class="floating-wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+</html>
+"""
+
+with open(r'c:\Users\admin\Desktop\iptv-website\blog\top-5-iptv-players-smart-tv-2026.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
