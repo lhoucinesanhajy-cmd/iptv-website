@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 
 
@@ -49,13 +49,22 @@
 
 
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'"><noscript><link rel="stylesheet" href="style.css"></noscript>
 
 
 
 
 
 <!-- Open Graph / Social Media -->
+<style>
+/* Critical above‑fold CSS */
+.page-hero{padding:140px 40px 80px;text-align:center;background:#0f051c;position:relative;overflow:hidden}
+.page-hero::before{content:"";position:absolute;width:700px;height:700px;background:radial-gradient(circle,rgba(168,85,247,.1)0%,transparent70%);top:-200px;left:50%;transform:translateX(-50%);border-radius:50%;pointer-events:none}
+.page-hero-inner{max-width:800px;margin:0 auto;position:relative;z-index:1}
+.page-hero-tag{display:inline-block;padding:7px 18px;font-size:.78rem;font-weight:600;color:#a855f7;background:rgba(168,85,247,.1);border:1px solid rgba(168,85,247,.25);border-radius:50px;margin-bottom:24px;letter-spacing:.5px}
+.page-hero h1{font-family:'Poppins',sans-serif;font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:900;line-height:1.1;letter-spacing:-1px;color:#fff;margin-bottom:18px}
+.page-hero p{font-size:1.05rem;color:rgba(224,216,240,.6);line-height:1.8;max-width:580px;margin:0 auto}
+</style>
 
 <meta property="og:type" content="website">
 
@@ -82,14 +91,7 @@
 <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/favicon.png">
 <link rel="manifest" href="/manifest.json">
-<!-- Microsoft Clarity -->
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "wpo8og2fef");
-</script>
+
     <meta name="geo.region" content="US" />
     <meta name="geo.placename" content="United States" />
 
@@ -748,7 +750,7 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
 
 
