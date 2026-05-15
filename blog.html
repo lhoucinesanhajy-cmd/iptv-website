@@ -34,32 +34,32 @@
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
-
-
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://i.ibb.co" crossorigin>
 
+  <!-- Preload LCP image -->
+  <link rel="preload" as="image" href="https://i.ibb.co/7dFpH3yc/Chat-GPT-Image-May-14-2026-02-46-52-AM.png" fetchpriority="high">
 
-
-  
-
-
-
-  
-
-
-
+  <!-- Non-blocking CSS -->
   <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'"><noscript><link rel="stylesheet" href="style.css"></noscript>
 
 
 
 <style>/* Critical above‑fold CSS */
+/* Font-display swap fallbacks */
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;background-color:#0f051c;color:#e0d8f0;margin:0}
+*,*::before,*::after{box-sizing:border-box}
+.logo{font-size:1.5rem;font-weight:800;background:linear-gradient(135deg,#a855f7,#6366f1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-decoration:none}
+header{position:fixed;top:0;left:0;width:100%;z-index:1000;background:transparent}
+.nav-container{max-width:1200px;margin:0 auto;padding:0 40px;height:68px;display:flex;align-items:center;justify-content:space-between}
 .page-hero{padding:140px 40px 80px;text-align:center;background:#0f051c;position:relative;overflow:hidden}
 .page-hero::before{content:"";position:absolute;width:700px;height:700px;background:radial-gradient(circle,rgba(168,85,247,.1)0%,transparent70%);top:-200px;left:50%;transform:translateX(-50%);border-radius:50%;pointer-events:none}
 .page-hero-inner{max-width:800px;margin:0 auto;position:relative;z-index:1}
 .page-hero-tag{display:inline-block;padding:7px 18px;font-size:.78rem;font-weight:600;color:#a855f7;background:rgba(168,85,247,.1);border:1px solid rgba(168,85,247,.25);border-radius:50px;margin-bottom:24px;letter-spacing:.5px}
-  .page-hero h1{font-family:'Poppins',sans-serif;font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:900;line-height:1.1;letter-spacing:-1px;color:#fff;margin-bottom:18px}
-.page-hero p{font-size:1.05rem;color:rgba(224,216,240,.6);line-height:1.8;max-width:580px;margin:0 auto}</style>
+.page-hero h1{font-family:'Poppins',system-ui,sans-serif;font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:900;line-height:1.1;letter-spacing:-1px;color:#fff;margin-bottom:18px}
+.page-hero p{font-size:1.05rem;color:rgba(224,216,240,.6);line-height:1.8;max-width:580px;margin:0 auto}
+.blog-card-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.blog-card-thumb{width:100%;aspect-ratio:16/9;overflow:hidden;background:#0d0d1a}</style>
 <style type="text/css">
 
     /* ---- Blog-specific styles ---- */
@@ -618,16 +618,16 @@
   <!-- Blog Grid (placeholder cards) -->
   <div class="blog-grid">
     <a class="blog-card" href="blog/ultimate-guide-live-sports-4k-no-buffering.html" style="text-decoration:none;">
-<div class="blog-card-thumb"><img src="https://i.ibb.co/7dFpH3yc/Chat-GPT-Image-May-14-2026-02-46-52-AM.png" alt="Live Sports 4K Guide" fetchpriority="high" width="800" height="450" fetchpriority="high"></div><div class="blog-card-body"><span class="blog-tag blog-tag--guide">Guide</span><h2 class="blog-card-title">The Ultimate Guide to Watching Live Sports in 4K: Say Goodbye to Buffering</h2><p class="blog-card-excerpt">Discover how to stream live sports in true 4K without buffering. Learn about CDN, HEVC (H.265), server stability, and why ottocean is the ultimate solution.</p><div class="blog-card-meta"><span class="blog-card-date"><i class="fa-regular fa-calendar"></i> May 14, 2026</span><span class="blog-card-read"><i class="fa-regular fa-clock"></i> 10 min read</span></div><span class="blog-read-more" style="display:inline-block; margin-top:15px; color:#a855f7; font-weight:600; font-size:0.9rem;">Read More &rarr;</span></div>
+<div class="blog-card-thumb"><img src="https://i.ibb.co/7dFpH3yc/Chat-GPT-Image-May-14-2026-02-46-52-AM.png" alt="Live Sports 4K Guide" fetchpriority="high" decoding="async" width="800" height="450"></div><div class="blog-card-body"><span class="blog-tag blog-tag--guide">Guide</span><h2 class="blog-card-title">The Ultimate Guide to Watching Live Sports in 4K: Say Goodbye to Buffering</h2><p class="blog-card-excerpt">Discover how to stream live sports in true 4K without buffering. Learn about CDN, HEVC (H.265), server stability, and why ottocean is the ultimate solution.</p><div class="blog-card-meta"><span class="blog-card-date"><i class="fa-regular fa-calendar"></i> May 14, 2026</span><span class="blog-card-read"><i class="fa-regular fa-clock"></i> 10 min read</span></div><span class="blog-read-more" style="display:inline-block; margin-top:15px; color:#a855f7; font-weight:600; font-size:0.9rem;">Read More &rarr;</span></div>
         </a>
     <a class="blog-card" href="blog/premium-iptv-vs-free-streaming-sites-upgrade.html" style="text-decoration:none;">
-<div class="blog-card-thumb"><img src="https://i.ibb.co/R4PWDPZC/Chat-GPT-Image-May-14-2026-03-03-23-AM.png" alt="Premium IPTV vs. Free Streaming Sites" loading="lazy" width="800" height="450"></div><div class="blog-card-body"><span class="blog-tag blog-tag--review">Comparison</span><h2 class="blog-card-title">Premium IPTV vs. Free Streaming Sites: Is It Worth the Upgrade?</h2><p class="blog-card-excerpt">A comprehensive comparison between premium IPTV services and free streaming sites. Discover the importance of CDN, HEVC, and server stability.</p><div class="blog-card-meta"><span class="blog-card-date"><i class="fa-regular fa-calendar"></i> May 14, 2026</span><span class="blog-card-read"><i class="fa-regular fa-clock"></i> 10 min read</span></div><span class="blog-read-more" style="display:inline-block; margin-top:15px; color:#a855f7; font-weight:600; font-size:0.9rem;">Read More &rarr;</span></div>
+<div class="blog-card-thumb"><img src="https://i.ibb.co/R4PWDPZC/Chat-GPT-Image-May-14-2026-03-03-23-AM.png" alt="Premium IPTV vs. Free Streaming Sites" loading="lazy" decoding="async" width="800" height="450"></div><div class="blog-card-body"><span class="blog-tag blog-tag--review">Comparison</span><h2 class="blog-card-title">Premium IPTV vs. Free Streaming Sites: Is It Worth the Upgrade?</h2><p class="blog-card-excerpt">A comprehensive comparison between premium IPTV services and free streaming sites. Discover the importance of CDN, HEVC, and server stability.</p><div class="blog-card-meta"><span class="blog-card-date"><i class="fa-regular fa-calendar"></i> May 14, 2026</span><span class="blog-card-read"><i class="fa-regular fa-clock"></i> 10 min read</span></div><span class="blog-read-more" style="display:inline-block; margin-top:15px; color:#a855f7; font-weight:600; font-size:0.9rem;">Read More &rarr;</span></div>
         </a>
 
     <a class="blog-card" id="blog-post-top5" href="blog/top-5-iptv-players-smart-tv-2026.html" style="text-decoration:none;">
 
         <div class="blog-card-thumb">
-          <img src="https://i.ibb.co/YVZ96xG/Chat-GPT-Image-May-12-2026-12-50-27-AM.png" alt="Best IPTV Players 2026 Comparison for Smart TVs" loading="lazy" width="800" height="450">
+          <img src="https://i.ibb.co/YVZ96xG/Chat-GPT-Image-May-12-2026-12-50-27-AM.png" alt="Best IPTV Players 2026 Comparison for Smart TVs" loading="lazy" decoding="async" width="800" height="450">
         </div>
         <div class="blog-card-body">
           <span class="blog-tag blog-tag--review">Software Review</span>
@@ -642,7 +642,7 @@
     <a class="blog-card" id="blog-post-new" href="blog/hls-vs-mpeg-dash.html" style="text-decoration:none;">
 
         <div class="blog-card-thumb">
-          <img src="https://i.ibb.co/MDDKsyVK/aec52890-2a97-495f-9bd6-f1b130ddaebd.png" alt="HLS vs. MPEG-DASH: Which Protocol is Best for Buffer-Free IPTV Streaming?" loading="lazy" width="800" height="450">
+          <img src="https://i.ibb.co/MDDKsyVK/aec52890-2a97-495f-9bd6-f1b130ddaebd.png" alt="HLS vs. MPEG-DASH: Which Protocol is Best for Buffer-Free IPTV Streaming?" loading="lazy" decoding="async" width="800" height="450">
         </div>
         <div class="blog-card-body">
           <span class="blog-tag blog-tag--guide">Streaming Guide</span>
@@ -657,7 +657,7 @@
 <a class="blog-card" id="blog-post-20" href="blog/fix-iptv-error-401.html" style="text-decoration:none;">
 
         <div class="blog-card-thumb">
-          <img src="https://i.ibb.co/zh448Lgc/May-10-2026-05-45-18-PM.png" alt="Corrected Fix IPTV Error 401 Unauthorized Playlist Guide" loading="lazy" width="800" height="450">
+          <img src="https://i.ibb.co/zh448Lgc/May-10-2026-05-45-18-PM.png" alt="Corrected Fix IPTV Error 401 Unauthorized Playlist Guide" loading="lazy" decoding="async" width="800" height="450">
         </div>
         <div class="blog-card-body">
           <span class="blog-tag blog-tag--guide">Troubleshooting Guide</span>
@@ -672,7 +672,7 @@
 <a class="blog-card" id="blog-post-19" href="blog/roku-iptv-setup.html" style="text-decoration:none;">
 
         <div class="blog-card-thumb">
-          <img src="https://i.ibb.co/PshxxysR/Chat-GPT-Image-May-10-2026-05-01-00-PM.png" alt="How to Setup IPTV on Roku TV: The Only Working Methods in 2026" loading="lazy" width="800" height="450">
+          <img src="https://i.ibb.co/PshxxysR/Chat-GPT-Image-May-10-2026-05-01-00-PM.png" alt="How to Setup IPTV on Roku TV: The Only Working Methods in 2026" loading="lazy" decoding="async" width="800" height="450">
         </div>
         <div class="blog-card-body">
           <span class="blog-tag blog-tag--tips">IPTV Tutorials</span>
@@ -687,7 +687,7 @@
 <a class="blog-card" id="blog-post-18" href="blog/best-vpn-protocol-settings-iptv.html" style="text-decoration:none;">
 
         <div class="blog-card-thumb">
-          <img src="img/vpn-iptv-unique.jpg" alt="VPN Protocol Settings for IPTV 2026" loading="lazy" width="800" height="450">
+          <img src="img/vpn-iptv-unique.jpg" alt="VPN Protocol Settings for IPTV 2026" loading="lazy" decoding="async" width="800" height="450">
         </div>
         <div class="blog-card-body">
           <span class="blog-tag blog-tag--tips">Technical Guide</span>
@@ -702,7 +702,7 @@
 <a class="blog-card" id="blog-post-17" href="blog/watch-world-cup-2026-qualifiers-iptv.html" style="text-decoration:none;">
 
         <div class="blog-card-thumb">
-          <img src="img/world-cup-qualifiers.png" alt="World Cup 2026 Qualifiers 4K Stream" loading="lazy" width="800" height="450">
+          <img src="img/world-cup-qualifiers.png" alt="World Cup 2026 Qualifiers 4K Stream" loading="lazy" decoding="async" width="800" height="450">
         </div>
         <div class="blog-card-body">
           <span class="blog-tag blog-tag--guide">Sports Guide</span>
@@ -717,7 +717,7 @@
 <a class="blog-card" id="blog-post-16" href="blog/setup-iptv-smarters-pro-samsung-lg-smart-tv.html" style="text-decoration:none;">
 
         <div class="blog-card-thumb">
-          <img src="img/tivimate-smarters-unique.jpg" alt="IPTV Smarters Pro Setup Guide for Samsung Tizen and LG webOS Smart TVs" loading="lazy" width="800" height="450">
+          <img src="img/tivimate-smarters-unique.jpg" alt="IPTV Smarters Pro Setup Guide for Samsung Tizen and LG webOS Smart TVs" loading="lazy" decoding="async" width="800" height="450">
         </div>
         <div class="blog-card-body">
           <span class="blog-tag blog-tag--guide">Setup Guides</span>
@@ -732,7 +732,7 @@
 <a class="blog-card" id="blog-post-15" href="blog/firestick-4k-max-vs-nvidia-shield-pro-iptv.html" style="text-decoration:none;">
 
         <div class="blog-card-thumb">
-          <img src="img/hardware-software-unique.jpg" alt="Firestick 4K Max vs Nvidia Shield Pro 2026" loading="lazy" width="800" height="450">
+          <img src="img/hardware-software-unique.jpg" alt="Firestick 4K Max vs Nvidia Shield Pro 2026" loading="lazy" decoding="async" width="800" height="450">
         </div>
         <div class="blog-card-body">
           <span class="blog-tag blog-tag--review">Hardware Reviews</span>
@@ -747,7 +747,7 @@
 <a class="blog-card" id="blog-post-14" href="blog/watch-champions-league-final-2026.html" style="text-decoration:none;">
 
         <div class="blog-card-thumb">
-          <img src="img/champions-unique.jpg" alt="Champions League Final 2026 4K Stream" loading="lazy" width="800" height="450">
+          <img src="img/champions-unique.jpg" alt="Champions League Final 2026 4K Stream" loading="lazy" decoding="async" width="800" height="450">
         </div>
         <div class="blog-card-body">
           <span class="blog-tag blog-tag--guide">Sports Guide</span>
@@ -762,7 +762,7 @@
 <a class="blog-card" id="blog-post-13" href="blog/best-iptv-nba-playoffs-2026.html" style="text-decoration:none;">
 
         <div class="blog-card-thumb">
-          <img src="img/nba-unique.jpg" alt="NBA Playoffs 2026 IPTV 4K Stream" loading="lazy" width="800" height="450">
+          <img src="img/nba-unique.jpg" alt="NBA Playoffs 2026 IPTV 4K Stream" loading="lazy" decoding="async" width="800" height="450">
         </div>
         <div class="blog-card-body">
           <span class="blog-tag blog-tag--guide">Sports Guide</span>
@@ -1101,9 +1101,11 @@
 
 
 
-    <!-- Deferred CSS & Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Deferred CSS & Fonts (non-render-blocking) -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap"></noscript>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous"></noscript>
     <style>
 
 
