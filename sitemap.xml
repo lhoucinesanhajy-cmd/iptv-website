@@ -1,75 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.ottocean.sbs/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <lastmod>2026-05-09</lastmod>
+    <loc>https://ottocean.sbs/</loc>
   </url>
   <url>
-    <loc>https://www.ottocean.sbs/blog.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-05-09</lastmod>
+    <loc>https://ottocean.sbs/blog-page-2.html</loc>
   </url>
   <url>
-    <loc>https://www.ottocean.sbs/blog/best-iptv-providers-australia-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-05-09</lastmod>
+    <loc>https://ottocean.sbs/blog-post-1.html</loc>
   </url>
   <url>
-    <loc>https://www.ottocean.sbs/blog/best-iptv-nba-playoffs-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-05-09</lastmod>
+    <loc>https://ottocean.sbs/blog-post-2.html</loc>
   </url>
   <url>
-    <loc>https://www.ottocean.sbs/blog/watch-champions-league-final-2026.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-05-09</lastmod>
+    <loc>https://ottocean.sbs/blog-post-3.html</loc>
   </url>
   <url>
-    <loc>https://www.ottocean.sbs/blog/firestick-4k-max-vs-nvidia-shield-pro-iptv.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-05-09</lastmod>
+    <loc>https://ottocean.sbs/blog-post-4.html</loc>
   </url>
   <url>
-    <loc>https://www.ottocean.sbs/blog/setup-iptv-smarters-pro-samsung-lg-smart-tv.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-05-09</lastmod>
+    <loc>https://ottocean.sbs/blog.html</loc>
   </url>
   <url>
-    <loc>https://www.ottocean.sbs/blog/watch-world-cup-2026-qualifiers-iptv.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-05-09</lastmod>
+    <loc>https://ottocean.sbs/blog/best-iptv-nba-playoffs-2026.html</loc>
   </url>
   <url>
-    <loc>https://www.ottocean.sbs/blog/best-vpn-protocol-settings-iptv.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-05-09</lastmod>
+    <loc>https://ottocean.sbs/blog/best-iptv-providers-australia-2026.html</loc>
   </url>
   <url>
-    <loc>https://www.ottocean.sbs/privacy-policy.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://ottocean.sbs/blog/best-vpn-protocol-settings-iptv.html</loc>
   </url>
   <url>
-    <loc>https://www.ottocean.sbs/terms-of-service.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://ottocean.sbs/blog/firestick-4k-max-vs-nvidia-shield-pro-iptv.html</loc>
   </url>
   <url>
-    <loc>https://www.ottocean.sbs/blog/hls-vs-mpeg-dash.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-05-12</lastmod>
+    <loc>https://ottocean.sbs/blog/fix-iptv-error-401.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/blog/hls-vs-mpeg-dash.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/blog/premium-iptv-vs-free-streaming-sites-upgrade.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/blog/roku-iptv-setup.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/blog/setup-iptv-smarters-pro-samsung-lg-smart-tv.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/blog/top-5-iptv-players-smart-tv-2026.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/blog/ultimate-guide-live-sports-4k-no-buffering.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/blog/watch-champions-league-final-2026-4k.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/blog/watch-champions-league-final-2026.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/blog/watch-world-cup-2026-qualifiers-iptv.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/blog/why-is-my-iptv-blocked-isp-throttling.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/faq.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/firestick-guide.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/how-to-choose-best-iptv-2026.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/pricing.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/privacy-policy.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/setup-iptv-apple-tv-4k.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/terms-of-service.html</loc>
+  </url>
+  <url>
+    <loc>https://ottocean.sbs/watch-ufc-premier-league-no-freezing.html</loc>
   </url>
 </urlset>
