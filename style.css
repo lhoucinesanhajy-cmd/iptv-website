@@ -4674,3 +4674,302 @@ header.scrolled {
          d i s p l a y :   b l o c k ; 
  }  
  
+/* =====================================================================
+   CABLE-FEATURES — PREMIUM 3-COLUMN FEATURE GRID SECTION
+   ottocean.sbs — Say Goodbye to Cable Costs
+   ===================================================================== */
+
+#cable-features {
+  background: #050505;
+  padding: 100px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Radial ambient glow behind the header */
+#cable-features::before {
+  content: '';
+  position: absolute;
+  top: -180px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 420px;
+  background: radial-gradient(ellipse at center, rgba(6,182,212,0.09) 0%, transparent 68%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Section Header ── */
+.fgs-header {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 64px;
+}
+
+.fgs-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #06b6d4;
+  background: rgba(6,182,212,0.09);
+  border: 1px solid rgba(6,182,212,0.28);
+  border-radius: 50px;
+  padding: 7px 20px;
+  margin-bottom: 22px;
+}
+
+.fgs-title {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: clamp(1.9rem, 4.5vw, 3rem);
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.fgs-title-accent {
+  background: linear-gradient(135deg, #06b6d4 0%, #0e7490 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fgs-subtitle {
+  font-size: 1rem;
+  color: #9ca3af;
+  line-height: 1.75;
+}
+
+/* ── 3-Column Grid ── */
+.fgs-grid {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* ── Card Base ── */
+.fgs-card {
+  background: #0d0d0d;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.32s cubic-bezier(0.22,1,0.36,1),
+              box-shadow 0.32s cubic-bezier(0.22,1,0.36,1),
+              border-color 0.32s ease;
+}
+
+.fgs-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 28px 64px rgba(0,0,0,0.55);
+  border-color: rgba(255,255,255,0.14);
+}
+
+/* ── Featured / Highlighted Card (middle) ── */
+.fgs-card--featured {
+  border: 1.5px solid #06b6d4;
+  box-shadow: 0 0 0 1px rgba(6,182,212,0.12),
+              0 0 44px rgba(6,182,212,0.16),
+              0 0 90px rgba(6,182,212,0.07);
+}
+
+.fgs-card--featured:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 0 1px rgba(6,182,212,0.2),
+              0 0 60px rgba(6,182,212,0.26),
+              0 28px 64px rgba(0,0,0,0.55);
+  border-color: #06b6d4;
+}
+
+/* ── Featured Badge ── */
+.fgs-featured-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #06b6d4;
+  color: #000;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 13px;
+  border-radius: 50px;
+  box-shadow: 0 0 16px rgba(6,182,212,0.55);
+}
+
+/* ── Card Image Wrapper ── */
+.fgs-card-img-wrap {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.fgs-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.55s cubic-bezier(0.22,1,0.36,1);
+  display: block;
+}
+
+.fgs-card:hover .fgs-card-img-wrap img {
+  transform: scale(1.05);
+}
+
+/* Gradient fade from image into card body */
+.fgs-card-img-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  background: linear-gradient(to bottom, transparent 0%, #0d0d0d 100%);
+  pointer-events: none;
+}
+
+/* ── Card Body ── */
+.fgs-card-body {
+  padding: 26px 28px 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ── Card Icon ── */
+.fgs-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  background: rgba(6,182,212,0.1);
+  border: 1px solid rgba(6,182,212,0.2);
+  color: #06b6d4;
+  flex-shrink: 0;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.fgs-card:hover .fgs-card-icon {
+  background: rgba(6,182,212,0.16);
+  box-shadow: 0 0 20px rgba(6,182,212,0.2);
+}
+
+.fgs-card-icon--featured {
+  background: rgba(6,182,212,0.15);
+  border-color: rgba(6,182,212,0.35);
+  box-shadow: 0 0 18px rgba(6,182,212,0.18);
+}
+
+/* ── Card Title ── */
+.fgs-card-title {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+  letter-spacing: -0.2px;
+}
+
+/* ── Card Description ── */
+.fgs-card-desc {
+  font-size: 0.885rem;
+  color: #9ca3af;
+  line-height: 1.8;
+  flex: 1;
+}
+
+.fgs-card-desc strong {
+  color: #d1d5db;
+  font-weight: 600;
+}
+
+/* ── Card CTA Link ── */
+.fgs-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #06b6d4;
+  text-decoration: none;
+  margin-top: 4px;
+  letter-spacing: 0.2px;
+  transition: gap 0.22s ease, color 0.22s ease;
+}
+
+.fgs-card-link:hover {
+  gap: 11px;
+  color: #22d3ee;
+}
+
+.fgs-card-link--featured {
+  color: #06b6d4;
+}
+
+.fgs-card-link--featured:hover {
+  color: #22d3ee;
+}
+
+/* ── Responsive: tablet ── */
+@media (max-width: 960px) {
+  .fgs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  #fgs-card-sports {
+    grid-column: 1 / -1;
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+/* ── Responsive: mobile ── */
+@media (max-width: 620px) {
+  #cable-features {
+    padding: 72px 20px;
+  }
+  .fgs-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  #fgs-card-sports {
+    grid-column: auto;
+    max-width: 100%;
+  }
+  .fgs-header {
+    margin-bottom: 44px;
+  }
+  .fgs-card-img-wrap {
+    height: 190px;
+  }
+  .fgs-card-body {
+    padding: 20px 22px 24px;
+  }
+  .fgs-title {
+    font-size: clamp(1.6rem, 7vw, 2.2rem);
+  }
+}
