@@ -382,6 +382,74 @@ header.scrolled {
     max-width: 100vw;
 }
 
+/* ── Football field background image ── */
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('img/sport-banner-bg.png');
+    background-size: cover;
+    background-position: center 60%;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+/* ── Dark overlay: keeps content readable ── */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to right,
+            rgba(15, 5, 28, 0.95) 0%,
+            rgba(15, 5, 28, 0.75) 55%,
+            rgba(15, 5, 28, 0.40) 100%),
+        linear-gradient(to top,
+            rgba(15, 5, 28, 0.85) 0%,
+            transparent 50%);
+    z-index: 1;
+}
+
+/* ── OttOcean brand label — top left ── */
+.hero-brand {
+    position: absolute;
+    top: 32px;
+    left: 40px;
+    z-index: 10;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-brand-logo {
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-size: 1.45rem;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #a855f7 0%, #6366f1 50%, #38bdf8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+}
+
+.hero-brand-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #a855f7;
+    background: rgba(168, 85, 247, 0.12);
+    border: 1px solid rgba(168, 85, 247, 0.35);
+    border-radius: 50px;
+}
+
+.hero-brand-tag i {
+    font-size: 0.65rem;
+}
+
 /* Background ambient blobs */
 #hero::before,
 #hero::after {
@@ -389,6 +457,7 @@ header.scrolled {
     position: absolute;
     border-radius: 50%;
     pointer-events: none;
+    z-index: 2;
 }
 
 #hero::before {
@@ -417,6 +486,8 @@ header.scrolled {
     gap: 64px;
     padding: 120px 0 80px;
     min-width: 0;
+    position: relative;
+    z-index: 5;
 }
 
 /* ---- Left column (50%) ---- */
@@ -4461,6 +4532,20 @@ header.scrolled {
         padding-bottom: 80px;
     }
 
+    /* Hero section: brand label adjustments */
+    .hero-brand {
+        top: 24px;
+        left: 20px;
+    }
+
+    .hero-brand-logo {
+        font-size: 1.15rem;
+    }
+
+    .hero-brand-tag {
+        display: none; /* Keep it uncluttered on small screens */
+    }
+
     /* Hero inner — prevent overflow from wide visual */
     .hero-inner {
         padding-top: 100px;
@@ -4973,3 +5058,373 @@ header.scrolled {
     font-size: clamp(1.6rem, 7vw, 2.2rem);
   }
 }
+
+/* =====================================================================
+   SPORT LIVE CHANNELS BANNER — #sport-banner
+   ottocean.sbs — "Don't miss out our best sport live channels"
+   ===================================================================== */
+
+#sport-banner {
+    position: relative;
+    padding: 100px 40px;
+    background: linear-gradient(135deg,
+        rgba(15, 5, 28, 0.97) 0%,
+        rgba(10, 3, 22, 0.99) 50%,
+        rgba(15, 5, 28, 0.97) 100%);
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Decorative background mesh */
+#sport-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse 700px 400px at 20% 50%, rgba(99, 102, 241, 0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 500px 300px at 80% 30%, rgba(56, 189, 248, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ── Inner layout: two columns ── */
+.sport-banner-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* ── LEFT: Content column ── */
+.sport-banner-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Eyebrow / live indicator */
+.sport-banner-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 18px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.28);
+    border-radius: 50px;
+    margin-bottom: 24px;
+}
+
+/* Pulsing live dot */
+.sport-banner-live-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ef4444;
+    box-shadow: 0 0 8px rgba(239, 68, 68, 0.8);
+    animation: sport-pulse-dot 1.4s ease-in-out infinite;
+    flex-shrink: 0;
+}
+
+@keyframes sport-pulse-dot {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50%       { transform: scale(1.35); opacity: 0.65; }
+}
+
+/* Main heading */
+.sport-banner-heading {
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+    font-weight: 900;
+    line-height: 1.07;
+    letter-spacing: -1.5px;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+/* Highlighted words — blue highlight box, mimicking the reference */
+.sport-banner-highlight {
+    position: relative;
+    display: inline;
+    color: #ffffff;
+    padding: 2px 10px;
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    border-radius: 6px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+/* Description text */
+.sport-banner-desc {
+    font-size: 0.97rem;
+    color: rgba(224, 216, 240, 0.6);
+    line-height: 1.82;
+    margin-bottom: 28px;
+    max-width: 520px;
+}
+
+/* ── Sport tags row ── */
+.sport-banner-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 36px;
+}
+
+.sport-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.82);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 50px;
+    transition: background 0.25s, border-color 0.25s, color 0.25s, transform 0.2s;
+    cursor: default;
+}
+
+.sport-tag:hover {
+    background: rgba(37, 99, 235, 0.18);
+    border-color: rgba(56, 189, 248, 0.4);
+    color: #38bdf8;
+    transform: translateY(-2px);
+}
+
+.sport-tag i {
+    font-size: 0.78rem;
+    opacity: 0.9;
+}
+
+/* ── Action buttons ── */
+.sport-banner-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.sport-banner-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 14px 32px;
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-size: 0.93rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 24px rgba(37, 99, 235, 0.45);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    white-space: nowrap;
+}
+
+.sport-banner-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 36px rgba(37, 99, 235, 0.65);
+}
+
+.sport-banner-btn i {
+    font-size: 0.75rem;
+}
+
+.sport-banner-btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    font-size: 0.93rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.78);
+    background: transparent;
+    border: 1.5px solid rgba(255, 255, 255, 0.18);
+    border-radius: 50px;
+    text-decoration: none;
+    transition: color 0.25s, border-color 0.25s, background 0.25s, transform 0.2s;
+    white-space: nowrap;
+}
+
+.sport-banner-btn-outline:hover {
+    color: #fff;
+    border-color: rgba(56, 189, 248, 0.5);
+    background: rgba(56, 189, 248, 0.07);
+    transform: translateY(-2px);
+}
+
+/* ── RIGHT: Visual column ── */
+.sport-banner-visual {
+    flex: 1;
+    min-width: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* Ambient glow blobs */
+.sport-banner-glow {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(60px);
+    opacity: 0.35;
+    z-index: 0;
+}
+
+.sport-banner-glow--blue {
+    width: 340px;
+    height: 260px;
+    background: rgba(37, 99, 235, 0.6);
+    top: -30px;
+    right: -20px;
+}
+
+.sport-banner-glow--purple {
+    width: 260px;
+    height: 200px;
+    background: rgba(168, 85, 247, 0.45);
+    bottom: -20px;
+    left: 20px;
+}
+
+/* Athletes image */
+.sport-banner-img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 580px;
+    height: auto;
+    object-fit: cover;
+    object-position: center bottom;
+    border-radius: 20px;
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.06),
+        0 24px 64px rgba(0, 0, 0, 0.6),
+        0 0 80px rgba(37, 99, 235, 0.2);
+    display: block;
+}
+
+/* Floating channels badge */
+.sport-banner-badge {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 18px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #fff;
+    background: rgba(15, 5, 28, 0.88);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    border-radius: 50px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    white-space: nowrap;
+}
+
+.sport-banner-badge i {
+    color: #38bdf8;
+    font-size: 0.82rem;
+}
+
+/* Pulse ring on badge */
+.sport-banner-pulse {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ef4444;
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.6);
+    animation: sport-badge-pulse 1.8s ease-in-out infinite;
+    flex-shrink: 0;
+}
+
+@keyframes sport-badge-pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+    70%  { box-shadow: 0 0 0 8px rgba(239, 68, 68, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+    .sport-banner-inner {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .sport-banner-content {
+        order: 2;
+    }
+
+    .sport-banner-visual {
+        order: 1;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .sport-banner-heading {
+        font-size: clamp(2rem, 7vw, 3rem);
+    }
+
+    .sport-banner-badge {
+        top: 14px;
+        left: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    #sport-banner {
+        padding: 70px 20px;
+    }
+
+    .sport-banner-heading {
+        font-size: clamp(1.8rem, 9vw, 2.6rem);
+        letter-spacing: -0.8px;
+    }
+
+    .sport-banner-desc {
+        font-size: 0.9rem;
+    }
+
+    .sport-banner-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sport-banner-btn,
+    .sport-banner-btn-outline {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .sport-banner-tags {
+        gap: 8px;
+    }
+
+    .sport-banner-img {
+        border-radius: 14px;
+    }
+
+    .sport-banner-badge {
+        font-size: 0.72rem;
+        padding: 7px 14px;
+    }
+}
+
